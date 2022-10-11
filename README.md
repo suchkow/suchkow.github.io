@@ -25,6 +25,7 @@ Furthermore, I have launched my own business in e-commerce sphere, that is now h
 
 - Python 3.0+ and packages: numpy, pandas, scipy, jupyter, pytelegrambotapi, flask, Spotify API, Genius API
 - C++ and libraries: stl, qt
+- SQL: PostgreSQL
 
 ---
 
@@ -50,7 +51,7 @@ Furthermore, I have launched my own business in e-commerce sphere, that is now h
 
 # INTERESTS
 
-- Business,
+- Business
 - Tennis
 - Journalism
 - Ice Hockey
