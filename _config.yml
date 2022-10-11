@@ -1,6 +1,4 @@
 theme: jekyll-theme-minimal
 title: Ilya Suchkov
 description: Data , Business Analyst
-logo: https://github.com/suchkow/suchkow.github.io/blob/main/docs/assets/gh-logo.png
-avatar: "docs/assets/gh-logo.png"
-
+logo: "docs/assets/gh-logo.png"
