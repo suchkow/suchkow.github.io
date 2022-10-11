@@ -2,3 +2,10 @@ theme: jekyll-theme-minimal
 title: Ilya Suchkov
 description: Data Scientist, Business Analyst
 logo: https://github.com/suchkow/suchkow.github.io/blob/main/docs/assets/gh-logo.png
+
+navbar-links:
+  About Me: "aboutme"
+  Resources:
+    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Learn markdown: "https://www.markdowntutorial.com/"
+  Author's home: "https://deanattali.com"
