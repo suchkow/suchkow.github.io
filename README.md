@@ -1,31 +1,23 @@
 # About Me
 
-[Machine Learning Engineer](https://www.datarevenue.com/) and Data Scientist in 
-the Metabolomics and Bio-Tech space, spending significant time on database 
-integrations and API design, owning the end-to-end processes from data 
-extraction to deploying models and releases.
+I have finished and done some of the courses at Coursera:
+- "Internet Giants: The Law and Economics of Media Platforms" - The University of Chicago
+- "Microeconomics principles" - The University of Illinois
+- "Combinatorics and Probability" - University of California San Diego & HSE University "Основы программирования на Python" - HSE University
+- "Swift 5 iOS Application Developer" - LearnQuest
 
-Formerly a writer and regular contributor to 
-[Towards Data Science](https://medium.com/@cereniyim), following 4 years as an 
-SAP consultant with project management and team leadership roles in the 
-Transportation Management space.
+Besides studies I do ice hockey. I have finished "Spartak Moscow" hockey school in 10 years and now I am a member of HSE University Ice Hockey Team.
+At my leisure time I do some work at freelance-cites, doing job of a translator (Russian - English) or as a programmer (using C++ and Python for back-end or big data analysis).
+Furthermore I launched my own business in e-commerce sphere, that is now had already closed. I have been cultivating a website for NFT-marketplace platform in collaboration with Innovation Center of Skolkovo. 
 
-Open to a product-focused role that can help me gain more experience in the 
-complete software development lifecycle and engineering best practices, 
-meanwhile owning complete product features that have a primary focus in 
-Machine Learning.
+### My Contacts
 
-Regardless of team and company size, working with and learning from experienced 
-senior engineers and leaders along a clear career path would be a key differentiator.
-
-### Contact
-
-**E-mail:** [iyimceren@gmail.com](mailto:iyimceren@gmail.com)<br/>
-**Linkedin:** [https://www.linkedin.com/in/ceren-iyim](https://www.linkedin.com/in/ceren-iyim)<br/>
-**Medium:** [https://medium.com/@cereniyim](https://medium.com/@cereniyim)<br/>
-**Github:** [https://github.com/cereniyim](https://github.com/cereniyim)<br/>
-**Kaggle:** [https://www.kaggle.com/cereniyim](https://www.kaggle.com/cereniyim)<br/>
-**Twitter:** [https://twitter.com/cereniyim](https://twitter.com/cereniyim)<br/>
+**Personal email:** [suchkovilya@yahoo.com](mailto:suchkovilya@yahoo.com)<br/>
+**Student email:** [idsuchkov@edu.hse.ru](mailto:idsuchkov@edu.hse.ru)<br/>
+**LinkedIn:** [www.linkedin.com/in/suchkow](https://www.linkedin.com/in/suchkow)<br/>
+**GitHub:** [github.com/suchkow](https://github.com/suchkow)<br/>
+**Telegram:** [t.me/suchkow](https://t.me/suchkow)<br/>
+**Phone/WhatsApp:** [+7 999 6719106](tel:+79996719106)<br/>
 
 ---
 # CURRENT EXPERIENCE
