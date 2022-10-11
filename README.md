@@ -23,7 +23,7 @@ Furthermore, I have launched my own business in e-commerce sphere, that is now h
 
 # PROGRAMMING SKILLS
 
-- Python 3.0+ and packages: numpy, pandas, scipy, jupyter, pytelegrambotapi, flask, Spotify API, Genius API
+- Python 3.0+ and packages: numpy, pandas, scipy, jupyter, pytelegrambotapi, flask, django, Spotify API, Genius API
 - C++ and libraries: stl, qt
 - SQL: PostgreSQL
 
@@ -47,6 +47,7 @@ Furthermore, I have launched my own business in e-commerce sphere, that is now h
 
 # CERTIFICATES & TRAININGS
 
+- Academic IELTS
 - Professional Training Course ["SQL for Working with Data and Analytics"](), 2022 - Yandex School of Data Analysis
 
 # INTERESTS
@@ -58,4 +59,3 @@ Furthermore, I have launched my own business in e-commerce sphere, that is now h
 - Politics
 - Football
 - F1
-
