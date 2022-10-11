@@ -50,6 +50,8 @@ Furthermore, I have launched my own business in e-commerce sphere, that is now h
 - Academic IELTS
 - Professional Training Course ["SQL for Working with Data and Analytics"](), 2022 - Yandex School of Data Analysis
 
+---
+
 # INTERESTS
 
 - Business
