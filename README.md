@@ -55,9 +55,9 @@ Furthermore, I have launched my own business in e-commerce sphere, that is now h
 # INTERESTS
 
 - Business
-- Tennis
-- Journalism
-- Ice Hockey
 - Politics
+- Literature
+- Ice Hockey
+- Tennis
 - Football
 - F1
