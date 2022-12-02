@@ -1,4 +1,5 @@
-theme: jekyll-theme-minimal
-title: [Ilya Suchkov]
-description: [Data Scientist & Business Analyst Intern]
+title: Ilya Suchkov
 logo: "docs/assets/gh-logo-4.png"
+description: Data Scientist & Business Analyst Intern
+show_downloads: true
+theme: jekyll-theme-minimal
