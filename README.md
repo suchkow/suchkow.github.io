@@ -8,6 +8,7 @@ I have finished and done some of the courses at Coursera:
 
 Besides studies I do ice hockey. I have finished "Spartak Moscow" hockey school in 10 years and now I am a member of HSE University Ice Hockey Team.
 At my leisure time I do some work at freelance-cites, doing job of a translator (Russian - English) or as a programmer (using C++ and Python for back-end or big data analysis).
+
 Furthermore, I have launched my own business in e-commerce sphere, that is now had already closed. I have been cultivating a website for NFT-marketplace platform in collaboration with Innovation Center of Skolkovo. I have created a magazine published on the [VK website](https://vk.com/thewhatyellow). I was an ideological inspirer, gathered and organized a group of friends who created content (articles, music selections, sports analytics).
 
 ### My Contacts
