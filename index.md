@@ -1,39 +1,68 @@
 ---
-title: A Dark and Random Jekyll Demo
+title: Resume | Suchkov Ilya
 --- 
 
-This is a quick demo of some handy things you can add to a Jekyll site. 
+# About Me
 
-View the [source code on GitHub](https://github.com/derekkedziora/jekyll-demo). 
+I have finished and done some of the courses at Coursera:
+- "Internet Giants: The Law and Economics of Media Platforms" - The University of Chicago
+- "Microeconomics principles" - The University of Illinois
+- "Combinatorics and Probability" - University of California San Diego & HSE University "Основы программирования на Python" - HSE University
+- "Swift 5 iOS Application Developer" - LearnQuest
 
-Check out my [blog](https://derekkedziora.com) or get in touch at derekkedziora@icloud.com 
+Besides studies I do ice hockey. I have finished "Spartak Moscow" hockey school in 10 years and now I am a member of HSE University Ice Hockey Team.
+At my leisure time I do some work at freelance-cites, doing job of a translator (Russian - English) or as a programmer (using C++ and Python for back-end or big data analysis).
 
-## Dark Mode Switch 
+Furthermore, I have launched my own business in e-commerce sphere, that is now had already closed. I have been cultivating a website for NFT-marketplace platform in collaboration with Innovation Center of Skolkovo. I have created a magazine published on the [VK website](https://vk.com/thewhatyellow). I was an ideological inspirer, gathered and organized a group of friends who created content (articles, music selections, sports analytics).
 
-Read [my guide to dark mode](https://derekkedziora.com/blog/dark-mode-revisited) to see how I created the dark mode switch on this Jekyll site. 
+### My Contacts
 
-Make sure you have the mode toggle on each page, otherwise you'll always display the system color preference.
+**Personal email:** [suchkovilya@yahoo.com](mailto:suchkovilya@yahoo.com)<br/>
+**Student email:** [idsuchkov@edu.hse.ru](mailto:idsuchkov@edu.hse.ru)<br/>
+**LinkedIn:** [linkedin.com/in/suchkow](https://www.linkedin.com/in/suchkow)<br/>
+**GitHub:** [github.com/suchkow](https://github.com/suchkow)<br/>
+**Telegram:** [t.me/suchkow](https://t.me/suchkow)<br/>
+**Phone/WhatsApp:** [+7 999 6719106](tel:+79996719106)<br/>
 
-## Random Post 
+---
 
-You can build a random post link using client side JavaScript! Here's [how to do it](https://derekkedziora.com/blog/Getting-Random-Post-in-Jekyll), or you can go to a [random post](/random). 
+# EDUCATION
 
-## Now Page 
+### HSE University, Moscow — BSc in Applied Mathematics and Programming
 
-Check out my dynamic [now page](/now).
+*SEPT. 2020 - JUNE 2025*
 
-## Tag Page 
+- Made a Windows/MAC OS-based application that parses IMDB database and offers to rate/comment on movies.
+- Worked with Kaggle datasets that were parsed into comperhansible tables showing parametrs and indicies.
+- Was taight in mathimatical disciplines (discrete math., linear algebra, abstract algebra, calculus, statistics), programming (introduction to Python/C++, algorithms and data structures) and other (business and management, micro/macroeconomics, english for IELTS)
 
-Jekyll doesn't have a built-in tag page, but it's easy to make your own. Here' my guide to [making a tag page](https://derekkedziora.com/blog/tag-page-jekyll).
+### University of London, London — BSc in Data Science and Business Analytics
 
-Here's my [demo tag page](/tags).
+*SEPT. 2020 - JUNE 2025*
 
-## Demo Blog Posts 
+---
 
-{% for post in site.posts %}
-{% unless post.categories contains "now" %}
+# CERTIFICATES & TRAININGS
 
-[{{ post.title }}]({{ post.url }})
+- Academic IELTS
+- Professional Training Course ["SQL for Working with Data and Analytics"](https://github.com/suchkow/suchkow.github.io/blob/main/docs/assets/2191271149588794425ilya_suchkov_20222sql00034.pdf), 2022 - Yandex School of Data Analysis
 
-{% endunless %}
-{% endfor %}
+---
+
+# PROGRAMMING SKILLS
+
+- Python 3.0+ and packages: numpy, pandas, scipy, jupyter, pytelegrambotapi, flask, django, Spotify API, Genius API
+- C++ and libraries: stl, qt
+- SQL: PostgreSQL
+
+---
+
+# INTERESTS
+
+- Business
+- Politics
+- Literature
+- Ice Hockey
+- Tennis
+- Football
+- F1
