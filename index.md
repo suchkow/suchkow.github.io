@@ -6,7 +6,7 @@ index: true
 
 {% include about-picture-img.html %}
 
-Hello! Recently, I have decided to enhance my old online resume. So, I have found an example and set up my own blogging website.
+Hi there! Recently, I have decided to enhance my old online resume. So, I have found an example and set up my own blogging website.
 
 Every day, I am work in progress and studying Data Science & Business Analytics.
 <a href="/about" class="internal-link quarter-line-space">More about me&nbsp;→</a>
@@ -20,9 +20,9 @@ I do not have much time for frequent update of small notes. Nevertheless, there 
 If you are somehow an HR (or any other corporate worker) and want to fully appreciate me (or for some curious eyes).
 <a href="/portfolio" class="internal-link quarter-line-space">Go and see my portfolio&nbsp;→</a>
 
-Please get in touch with the [contact page](/_pages/contact).
+Please get in touch with the [contact page](/contact).
 
-[RSS Feed](/_pages/rss)
+[RSS Feed](/rss)
 
 <!-- Add you Mastodon handle here if you want to verify it
 	
