@@ -1,5 +1,5 @@
 ---
-title: 🌀Portfolio
+title: '🌀Portfolio'
 description: "Highlights of my work as writer in the tech industry."
 nav: custom
 custom-nav: 

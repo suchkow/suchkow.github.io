@@ -1,5 +1,5 @@
 ---
-title: 🌀Blog
+title: '🌀Blog'
 description: "All of the posts in Derek’s Digital Garden"
 og-type: website
 permalink: /blog

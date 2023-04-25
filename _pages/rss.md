@@ -1,5 +1,5 @@
 ---
-title: RSS
+title: '🌀RSS'
 description: "How the RSS feeds on this site work"
 og-type: website
 permalink: /rss
