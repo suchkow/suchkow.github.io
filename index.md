@@ -1,6 +1,6 @@
 ---
 og-type: website
-title: Main | IStorage
+title: 🌀IStorage
 layout: index
 index: true
 ---
@@ -12,7 +12,7 @@ Hi there! Recently, I have decided to enhance my old online resume. So, I have f
 Every day, I am work in progress and studying Data Science & Business Analytics.
 <a href="/about" class="internal-link quarter-line-space">More about me&nbsp;→</a>
 
-Main chapter of my site, where I post long-reads about anything.
+The main chapter of my site, where I post articles and long-reads on (not only) scientific topics.
 <a href="/blog" class="internal-link quarter-line-space">Check out my articles&nbsp;→</a>
 
 I do not have much time for frequent update of small notes. Nevertheless, there is something...
