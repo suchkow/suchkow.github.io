@@ -1,4 +1,4 @@
-title: 'IStorage'
+title: 'IStorage 🌀'
 author: Ilya Suchkov
 email: 'suchkovilya@yahoo.com'
 description: 'A template created by Derek Kedziora'
@@ -9,11 +9,11 @@ language: en_US
 
 # social images
 
-favicon: /static/social-media-images/borshch-and-salo-favicon.jpeg
+favicon: /static/social-media-images/
 twitter: "@good-luck-twitter-existing-in-a-few-years"
-social-media-image-url: /static/social-media-images/borshch-and-salo.jpeg
+social-media-image-url: /static/social-media-images/
 twitter-card-image: do.jpg
-iOS-icon: /static/social-media-images/borshch-and-salo-ios.jpeg
+iOS-icon: /static/social-media-images/
 
 # leave these unless you are more familiar with jekyll settings
 
