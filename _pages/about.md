@@ -1,5 +1,5 @@
 ---
-title: About
+title: 🌀About
 description: "Derek Kedziora is a UX writer, content strategist, geek, tinkerer and avid reader."  
 nav: custom
 custom-nav: 
