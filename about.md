@@ -1,3 +1,10 @@
+---
+layout: post
+title: About | IStorage
+permalink: ''
+published: true
+---
+
 # ABOUT ME
 I have finished and done some of the courses at Coursera:
 - "Internet Giants: The Law and Economics of Media Platforms" - The University of Chicago

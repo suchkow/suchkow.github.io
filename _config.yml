@@ -4,4 +4,4 @@ description: Student
 logo: 'path'
 theme: minima # jekyll-theme-minimal
 
-show_downloads: True
+show_downloads: false
