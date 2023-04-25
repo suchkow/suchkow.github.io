@@ -23,7 +23,7 @@ If you are somehow an HR (or any other corporate worker) and want to fully appre
 
 Please get in touch with the [contact page](/contact).
 
-Big thanks to Derek Kedziora, who suffered (for me, it is only about that feeling) with creating beautiful css-style and developing compressible skeleton.
+Big thanks to Derek Kedziora, who suffered (for me, it is only about that feeling) with creating beautiful css-style and developing comprehensible skeleton.
 
 <!-- Add you Mastodon handle here if you want to verify it
 	
