@@ -1,5 +1,7 @@
-title: Илья Сучков 
-logo: "docs/assets/gh-logo-4.png"
-description: Стажер
-show_downloads: true
-theme: jekyll-theme-minimal
+title: Resume | IStorage
+author: Ilya Suchkov
+description: Student
+logo: 'path'
+theme: minima # jekyll-theme-minimal
+
+show_downloads: True
