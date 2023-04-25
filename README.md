@@ -18,7 +18,7 @@ This is an RSS first blog and microblog.
 
 Posts with the category `rss-club` will **only** be published via the RSS feed. 
 
-By default only 10 notes are displayed on the site at a time, although the permalinks to older notes don’t expire. This allows the site to stay fresh and not overwhelming without breaking links and allows you to still have easy access to older notes. 
+By default, only 10 notes are displayed on the site at a time, although the permalinks to older notes don’t expire. This allows the site to stay fresh and not overwhelming without breaking links and allows you to still have easy access to older notes. 
 
 `/now` will display the most recent post with the category `now`. 
 
@@ -40,6 +40,6 @@ If you don’t want to use these defaults, move pages from the `_no-index` folde
 
 ## Creative Commons 0 
 
-I release all of the code and content of this repository under the [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/) license. You’re free to copy, reuse, modify or do whatever you want with it. 
+I release all the code and content of this repository under the [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/) license. You’re free to copy, reuse, modify or do whatever you want with it. 
 
 You don’t have to attribute it, but it would be nice to add a link to [my site](https://derekkedziora.com) or this repo.  

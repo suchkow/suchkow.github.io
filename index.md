@@ -1,5 +1,6 @@
 ---
 og-type: website
+title: Main | IStorage
 layout: index
 index: true
 ---
