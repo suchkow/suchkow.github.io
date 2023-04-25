@@ -9,6 +9,6 @@ custom-nav:
 permalink: /portfolio
 ---
 
-And add some stuff about your work here. 
+And add some stuff about your work here.
 
 You can use the `/static/portfolio` folder for some example files, a CV, etc.

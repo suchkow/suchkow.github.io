@@ -9,11 +9,11 @@ language: en_US
 
 # social images
 
-favicon: /static/social-media-images/
+favicon: /static/social-media-images/favicon.png
 twitter: "@good-luck-twitter-existing-in-a-few-years"
-social-media-image-url: /static/social-media-images/
+social-media-image-url: /static/social-media-images/favicon.png
 twitter-card-image: do.jpg
-iOS-icon: /static/social-media-images/
+iOS-icon: /static/social-media-images/favicon.png
 
 # leave these unless you are more familiar with jekyll settings
 
