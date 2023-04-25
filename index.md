@@ -1,6 +1,6 @@
 ---
 og-type: website
-title: 🌀IStorage
+title: IStorage
 layout: index
 index: true
 ---

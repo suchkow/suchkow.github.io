@@ -1,6 +1,6 @@
 ---
-title: '🌀About'
-description: "Derek Kedziora is a UX writer, content strategist, geek, tinkerer and avid reader."  
+title: 'About'
+description: "Ilya Suchkov "  
 nav: custom
 custom-nav: 
     - '<a href="/now" title="Now">Now</a>&nbsp;|&nbsp;'

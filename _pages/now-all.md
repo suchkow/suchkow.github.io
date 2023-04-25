@@ -1,5 +1,5 @@
 ---
-title: All of my now updates
+title: All NOWs
 description: "All of my now updates"
 og-type: website
 permalink: /blog/now

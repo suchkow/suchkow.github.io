@@ -1,5 +1,5 @@
 ---
-title: '🌀Now' 
+title: 'Now' 
 description: "What I'm currently up to"
 nowPage: true
 permalink: /now
