@@ -1,6 +1,6 @@
 ---
-layout: post
-title: About | IStorage
+layout: default
+title: About
 permalink: ''
 published: true
 ---
