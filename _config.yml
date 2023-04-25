@@ -1,9 +1,7 @@
-# Customize these with your info 
-
-title: "Seredyna, a Jekyll Template" 
-author: Your Name
-email: "exmaple@exmple.com"
-description: "A template created by Derek Kedziora"
+title: 'IStorage'
+author: Ilya Suchkov
+email: 'suchkovilya@yahoo.com'
+description: 'A template created by Derek Kedziora'
 github: derekkedziora
 timezone: Europe/Amsterdam
 url: https://seredyna.netlify.app/
