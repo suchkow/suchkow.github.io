@@ -11,7 +11,6 @@ permalink: /notes
 <div class="callout" markdown="1">
 
 ## What are notes?
-
 This is a place for shorter thoughts, interesting links and shaping ideas before they become full posts.
 
 </div>
@@ -19,7 +18,7 @@ This is a place for shorter thoughts, interesting links and shaping ideas before
 
 {% for post in site.categories.notes limit: 15 %}
 <section class="note-entry" markdown="1">
-<h1><a href="{{post.url}}" style="text-decoration: none;">{{post.title}}</a></h1>
+<h2><a href="{{post.url}}" style="text-decoration: none;">{{post.title}}</a></h2>
 
 {{post.content}}
 
@@ -30,9 +29,8 @@ This is a place for shorter thoughts, interesting links and shaping ideas before
 
 <div class="callout" markdown="1">
 
-## You’ve reached the end, kind of
-
-There is a limit of 15 last notes.
-#### Older notes are still accessible via their respective link.
+## You’ve reached the end
+There is a limit of 15 last notes to not overwhelming the page.
+_Older notes are still accessible via their respective link._
 
 </div>
