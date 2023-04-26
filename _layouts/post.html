@@ -8,13 +8,13 @@
 	<h1 class="post-title">{%- if page.nowPage -%}{{ site.categories.now[0].title }}{%- else -%}{{ page.title }}{%- endif -%}</h1>
 	<p class="post-author-and-time">
 	  <a href="/" title="Home" rel="author" class="internal-link">Ilya Suchkov</a>
+	  &nbsp;&middot;&nbsp;
+	  <a href="" title="Topics" class="tag-list">{{ page.tags }}</a>
 	  {%- unless page.category contains "english-guide" -%}
 	  &nbsp;&middot;&nbsp;
 	  <time datetime="{{ postDate | date: '%Y-%m-%d' }}">
 	    {%- unless page.custom-date %}{{ postDate | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ postDate | date: "%Y" }}{%- else -%}{{ page.custom-date }}{%- endunless -%}
 		</time>
-	  &nbsp;&middot;&nbsp;
-	  <a href="" title="Topics" class="tag-list">{{ page.tags }}</a>
 	  {% endunless %}
 	</p>
 </header>
