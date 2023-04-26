@@ -11,7 +11,8 @@
 
     <meta charset="UTF-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
-    <title>{{ page.title }} | IStorage</title>
+    {% if !page.index %}<title>{{ page.title }} | IStorage</title>{% endif %}
+    {% if page.index %}<title>{{ page.title }}</title>{% endif %}
     <link rel='stylesheet' type='text/css' href='/css/main.css'>
     {% if page.syntax %}<link rel='stylesheet' type='text/css' href='/css/code.css'>{% endif %}
     <meta name="description" content="{% if page.description %}{{ page.description }}
