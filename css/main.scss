@@ -2,11 +2,14 @@
 ---
 
 $body-typeface: IBM Plex Sans, sans-serif;
-$heading-typeface: IBM Plex Sans, sans-serif; 
+$heading-typeface: Martian Grotesk, sans-serif;
 $mono-typeface: IBM Plex Mono, monospace;
 $text-width: 600px;
 
-
+@font-face {
+  font-family: "Martian Grotesk";
+  src: url("/static/fonts/MartianGrotesk-sWdBl.woff2");
+}
 
 @font-face {
   font-family: "IBM Plex Mono";
