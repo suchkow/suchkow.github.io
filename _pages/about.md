@@ -3,9 +3,8 @@ title: 'About'
 description: "Ilya Suchkov"
 nav: custom
 custom-nav: 
-    - '<a href="/now" title="Now">Now</a>&nbsp;|&nbsp;'
-    - '<a href="/portfolio" title="Portfolio">Portfolio</a>&nbsp;|&nbsp;'
-    - '<a href="/contact" title="Contact">Contact</a>'
+    - '<a href="/contact" title="Contact">Contact</a>&nbsp;|&nbsp;'
+    - '<a href="/resume" title="Resume">Resume</a>'
 permalink: /about
 ---
 

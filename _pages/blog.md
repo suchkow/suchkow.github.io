@@ -1,13 +1,14 @@
 ---
 title: 'Blog'
-description: "All of the posts in Derek’s Digital Garden"
+description: "Discover Ilya Suchkov's Articles."
 og-type: website
 permalink: /blog
 nav: custom
 custom-nav: 
-    - '<a href="/blog/tags" title="Tags">Tags</a>&nbsp;|&nbsp;'
     - '<a style="cursor: pointer;" onclick="toggleSearchBar()" title="Search" >Search</a>&nbsp;|&nbsp;'
-    - '<a href="/blog/random" title="Random post">Random</a>'
+    - '<a href="/blog/tags" title="Tags">Tags</a>&nbsp;|&nbsp;'
+    - '<a href="/notes" title="Notes">Notes</a>&nbsp;|&nbsp;'
+    - '<a href="/404" title="Random">Random</a>'
 ---
 
 <div id="search-bar" style="display: none;">
@@ -21,8 +22,6 @@ post.categories contains "now"-%}
 {% endunless %}
 {% endfor %}
 
-
-<!-- this makes the search bar display a bit nicer but can easily be removed -->
 
 <script>
 
