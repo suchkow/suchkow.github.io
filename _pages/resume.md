@@ -1,5 +1,5 @@
 ---
-title: 'Resume'
+title: 'Curriculum Vitae'
 description: "Ilya Suchkov's Resume"
 nav: custom
 custom-nav: 
@@ -8,6 +8,4 @@ custom-nav:
 permalink: /resume
 ---
 
-And add some stuff about your work here.
-
-You can use the `/static/portfolio` folder for some example files, a CV, etc.
+Some stuff here.
