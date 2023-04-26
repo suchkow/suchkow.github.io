@@ -11,11 +11,12 @@ custom-nav:
     - '<a href="/404" title="Random">Random</a>'
 ---
 
+
 <div id="search-bar" style="display: none;">
 {%- include search.html -%}
 </div>
 
-{% for post in site.categories.essays %}
+{% for post in site.categories.articles %}
 {%- unless post.categories contains "rss-club" or 
 post.categories contains "now"-%}
 {% include blog-listing.html %}
