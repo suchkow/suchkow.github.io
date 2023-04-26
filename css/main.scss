@@ -523,10 +523,10 @@ a:visited:hover {
   color: var(--light-text-color);
   display: contents;
   height: 26px;
-  line-height: 26px;
+  // line-height: 26px;
   padding: 0 20px 0 23px;
-  position: relative;
-  margin: 0 0 0 0;
+  position: static;
+  // margin: 0 0 0 0;
   text-decoration: none;
   -webkit-transition: color 0.2s;
 }

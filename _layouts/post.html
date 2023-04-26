@@ -11,7 +11,7 @@
 	{%- unless page.category contains "english-guide" -%}
 	&nbsp;&middot;&nbsp;<time datetime="{{ postDate | date: '%Y-%m-%d' }}">
 	{%- unless page.custom-date %}{{ postDate | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ postDate | date: "%Y" }}{%- else -%}{{ page.custom-date }}{%- endunless -%}</time>{% endunless %}</p>
-	<span class="tag">{% for tag in page.tags %}{% include tags.html %}{% endfor %}</span>
+	<span>{% for tag in page.tags %}{% include tags.html %}{% endfor %}</span>
 </header>
 
 {%- if page.categories contains "now" -%}
