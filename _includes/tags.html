@@ -1,1 +1,1 @@
-<a href="/topics/#{{ tag }}">{{ tag | replace: ",", "&nbsp;&middot;"}}</a>{% if forloop.last != true %}, {% endif %}
+<a href="/topics/#{{ tag }}" title="All articles on {{ tag }}">{{ tag }}</a>{% if forloop.last != true %}&middot; {% endif %}
