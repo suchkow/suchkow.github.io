@@ -2,7 +2,7 @@
 title: 'Contact'
 description: "Email is the best way to get in touch."
 permalink: /contact
---- 
+---
 
 
 Email’s the best way to get in touch: 

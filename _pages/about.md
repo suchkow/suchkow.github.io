@@ -1,6 +1,6 @@
 ---
-title: 'About | IStorage'
-description: "Ilya Suchkov "  
+title: 'About'
+description: "Ilya Suchkov"
 nav: custom
 custom-nav: 
     - '<a href="/now" title="Now">Now</a>&nbsp;|&nbsp;'

@@ -8,9 +8,10 @@
     page.categories contains "notes" %}
     <meta name="robots" content="noindex" />
     {% endif %}
+
     <meta charset="UTF-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} | IStorage</title>
     <link rel='stylesheet' type='text/css' href='/css/main.css'>
     {% if page.syntax %}<link rel='stylesheet' type='text/css' href='/css/code.css'>{% endif %}
     <meta name="description" content="{% if page.description %}{{ page.description }}
@@ -19,7 +20,7 @@
     <link rel="canonical" href="{% if page.canonical %}{{ site.url }}{{ page.canonical }}{% else %}{{ page.url | absolute_url }}{% endif %}">
     <meta name="generator" content="Jekyll" />
     
-    <!-- OG metadata --> 
+    <!-- OG metadata -->
     <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     {% if page.social-media-image %} 
@@ -36,7 +37,7 @@
     <meta property="og:url" content="{{ page.url | absolute_url }}"/>
     <meta property="og:site_name" content="{{ site.title }}">
 
-    <!-- Twitter Card --> 
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:creator" content="{{ site.twitter }}">
     <meta name="twitter:title" content="{%- if page.title -%}{{ page.title }}{%- else -%}{{ site.title }}{%- endif -%}"/>
@@ -48,14 +49,14 @@
     <link rel="icon" href="{{ site.favicon }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ site.iOS-icon }}">
 
-    <!-- RSS feed --> 
+    <!-- RSS feed -->
     <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="{{ site.title }}" />
     <link type="application/atom+xml" rel="alternate" href="/feed/notes.xml" title="{{ site.title }} | Notes" />
     <link type="application/atom+xml" rel="alternate" href="/feed/essays.xml" title="{{ site.title }} | Essays" />
     <link type="application/atom+xml" rel="alternate" href="/feed/now.xml" title="{{ site.title }} | Now" />
     
     {% if page.index %}
-    <!-- enter validation codes here --> 
+    <!-- enter validation codes here -->
 
     {% endif %}
 </head>
