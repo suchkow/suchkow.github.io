@@ -513,3 +513,29 @@ a:hover {
 a:visited:hover {
   color: #e33;//#EA1C00;
 }
+
+
+// tags in articles
+
+.tag {
+  background: #eee;
+  border-radius: 10px 10px 10px 10px;
+  color: #999;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 0 0 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.tag:hover {
+  background-color: #1141a1;
+  color: white;
+}
+
+.tag:hover::after {
+  border-left-color: #223872;
+}
