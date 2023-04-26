@@ -5,7 +5,7 @@ permalink: /contact
 ---
 
 
-Email’s the best way to get in touch: 
+Email is the best way to get in touch: 
 
 **{{ site.email }}**
 
@@ -14,12 +14,11 @@ Email’s the best way to get in touch:
 <a href="mailto:{{site.email}}">Send email</a>
 </div>
 
-**Student email:** [idsuchkov@edu.hse.ru](mailto:idsuchkov@edu.hse.ru)<br/>
-**LinkedIn:** [linkedin.com/in/suchkow](https://www.linkedin.com/in/suchkow)<br/>
-**GitHub:** [github.com/suchkow](https://github.com/suchkow)<br/>
-**Telegram:** [t.me/suchkow](https://t.me/suchkow)<br/>
-**Phone and WhatsApp:** [+7 917 930 1551](tel:+79179301551)<br/>
-
+* Student email: [idsuchkov@edu.hse.ru](mailto:idsuchkov@edu.hse.ru)<br/>
+* LinkedIn: [linkedin.com/in/suchkow](https://www.linkedin.com/in/suchkow)<br/>
+* GitHub: [github.com/suchkow](https://github.com/suchkow)<br/>
+* Telegram: [t.me/suchkow](https://t.me/suchkow)<br/>
+* Phone and WhatsApp: [+7 917 930 1551](tel:+79179301551)<br/>
 
 
 <script>
