@@ -520,8 +520,8 @@ a:visited:hover {
 .tag {
   background: #eee;
   border-radius: 4px 4px 4px 4px;
-  color: #999;
-  display: inline-block;
+  color: var(--light-text-color);
+  display: contents;
   height: 26px;
   line-height: 26px;
   padding: 0 20px 0 23px;
