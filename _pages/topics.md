@@ -13,7 +13,7 @@ permalink: /blog/topics
 <a href="/notes">Recent notes</a>
 </div>
 
-<h2 id="tags">Tags</h2>
+<h2 id="topics">Topics</h2>
 
 {% assign sortedTags = site.tags | sort %}
 
