@@ -521,7 +521,7 @@ a:visited:hover {
   background: #eee;
   border-radius: 4px 4px 4px 4px;
   color: var(--light-text-color);
-  display: contents;
+  display: inline-block;
   height: 26px;
   // line-height: 26px;
   padding: 0 20px 0 23px;
