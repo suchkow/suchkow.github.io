@@ -179,6 +179,7 @@ time {
 }
 
 .post-author-and-time {
+  font-family: $heading-ibm;
   color: var(--light-text-color);
   margin-top: calc(.125 * var(--line-height));
 }
