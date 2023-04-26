@@ -19,11 +19,11 @@ I do not have much time for frequent update of small notes. Nevertheless, there 
 <a href="/notes" class="internal-link quarter-line-space">Discover my notes&nbsp;→</a>
 
 If you are somehow an HR (or any other corporate worker) and want to fully appreciate me (or for some curious eyes).
-<a href="/portfolio" class="internal-link quarter-line-space">Go and see my portfolio&nbsp;→</a>
+<a href="/resume" class="internal-link quarter-line-space">Go and see my resume&nbsp;→</a>
 
 Please get in touch with the [contact page](/contact).
 
-Big thanks to Derek Kedziora, who created beautiful css-style and developed comprehensible skeleton.
+##### Big thanks to Derek Kedziora, who created beautiful css-style and developed comprehensible skeleton.
 
 <!-- Add you Mastodon handle here if you want to verify it
 	
