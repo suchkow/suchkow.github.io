@@ -14,9 +14,13 @@ Email’s the best way to get in touch:
 <a href="mailto:{{site.email}}">Send email</a>
 </div>
 
-Add some social media or other ways to follow you.
+**Student email:** [idsuchkov@edu.hse.ru](mailto:idsuchkov@edu.hse.ru)<br/>
+**LinkedIn:** [linkedin.com/in/suchkow](https://www.linkedin.com/in/suchkow)<br/>
+**GitHub:** [github.com/suchkow](https://github.com/suchkow)<br/>
+**Telegram:** [t.me/suchkow](https://t.me/suchkow)<br/>
+**Phone and WhatsApp:** [+7 917 930 1551](tel:+79179301551)<br/>
 
-[RSS](/rss) is the best way to follow me.
+
 
 <script>
 function copyEmailtoClipboard() {
