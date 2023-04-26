@@ -1,13 +1,13 @@
 ---
 title: 'Blog'
-description: "Discover Ilya Suchkov's Articles."
+description: "Discover Ilya Suchkov's articles and notes or search for particular one."
 og-type: website
 permalink: /blog
 nav: custom
 custom-nav: 
     - '<a style="cursor: pointer;" onclick="toggleSearchBar()" title="Search" >Search</a>&nbsp;|&nbsp;'
-    - '<a href="/blog/tags" title="Tags">Tags</a>&nbsp;|&nbsp;'
-    - '<a href="/notes" title="Notes">Notes</a>&nbsp;|&nbsp;'
+    - '<a href="/blog/topics" title="Topics of articles">Topics</a>&nbsp;|&nbsp;'
+    - '<a href="/notes" title="Last 15 notes">Notes</a>&nbsp;|&nbsp;'
     - '<a href="/404" title="Random">Random</a>'
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: "Tags"
-description: "All of my blog posts sorted by tag"
-permalink: /blog/tags
+title: "Topics"
+description: "Ech of my articles has one or more topic."
+permalink: /blog/topics
 ---
 
 {% include search.html %}

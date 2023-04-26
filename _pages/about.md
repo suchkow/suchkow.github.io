@@ -2,9 +2,9 @@
 title: 'About'
 description: "Ilya Suchkov"
 nav: custom
-custom-nav: 
-    - '<a href="/contact" title="Contact">Contact</a>&nbsp;|&nbsp;'
-    - '<a href="/resume" title="Resume">Resume</a>'
+custom-nav:
+    - '<a href="/resume" title="Resume">Resume</a>&nbsp;|&nbsp;'
+    - '<a href="/contact" title="Contact">Contact</a>'  
 permalink: /about
 ---
 
