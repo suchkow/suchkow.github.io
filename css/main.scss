@@ -518,9 +518,11 @@ a:visited:hover {
 // tags in articles
 
 .tag {
-  background: #eee;
+  background: var(--underline-color);
+  border: none;
   border-radius: 4px 4px 4px 4px;
-  color: var(--light-text-color);
+  outline: none;
+  color: var(--main-text-color);
   display: inline-block;
   height: 26px;
   // line-height: 26px;
@@ -532,10 +534,10 @@ a:visited:hover {
 }
 
 .tag:hover {
-  background-color: #1141a1;
+  background-color: #323550;
   color: white;
 }
 
 .tag:hover::after {
-  border-left-color: #223872;
+  border-left-color: #503d3d;
 }
