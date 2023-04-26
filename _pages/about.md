@@ -1,5 +1,5 @@
 ---
-title: 'About'
+title: 'About | IStorage'
 description: "Ilya Suchkov "  
 nav: custom
 custom-nav: 
@@ -12,7 +12,6 @@ permalink: /about
 
 {% include about-picture-img.html %}
 
-# ABOUT ME
 I have finished and done some courses at Coursera:
 - "Internet Giants: The Law and Economics of Media Platforms" — The University of Chicago
 - "Microeconomics principles" — The University of Illinois
