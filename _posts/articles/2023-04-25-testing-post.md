@@ -2,7 +2,7 @@
 title: Testing
 description: Testing post to see the author 
 category: articles
-tags: [jekyll machine-learning data-science web-dev html IntelliJ-IDEA mathematics business programming]
+tags: [jekyll, machine-learning, data-science, web-dev, html, IntelliJ-IDEA, mathematics, business, programming]
 permalink: /blog/testing-post
 date: 2023-04-25
 syntax: true

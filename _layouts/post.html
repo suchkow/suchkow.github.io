@@ -8,7 +8,8 @@
 	<h1 class="post-title">{%- if page.nowPage -%}{{ site.categories.now[0].title }}{%- else -%}{{ page.title }}{%- endif -%}</h1>
 	<p class="post-author-and-time">
 	<a href="/" title="Home" rel="author" class="internal-link">Ilya Suchkov</a>
-	&nbsp;&middot;&nbsp;<a href="/blog/topics" title="Topics" class="internal-link">{{ page.tags }}</a>
+	<!-- &nbsp;&middot;&nbsp;<a href="/blog/topics" title="Topics" class="internal-link">{{ page.tags }}</a> -->
+	<span class="internal-link">{% for tag in page.tags %}{% include tags.html %}{% endfor %}</span>
 	{%- unless page.category contains "english-guide" -%}
 	&nbsp;&middot;&nbsp;<time datetime="{{ postDate | date: '%Y-%m-%d' }}">
 	{%- unless page.custom-date %}{{ postDate | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ postDate | date: "%Y" }}{%- else -%}{{ page.custom-date }}{%- endunless -%}</time>{% endunless %}</p>
