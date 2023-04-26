@@ -1,7 +1,7 @@
 ---
 title: Testing
 description: Testing post to see the author 
-category: essays
+category: articles
 tags: testing
 permalink: /blog/testing-post
 date: 2023-04-25

@@ -1,7 +1,7 @@
 ---
 title: "Fancier posting options"
 description: "Another sample post" 
-category: essays
+category: articles
 tags: typography
 permalink: /blog/facnier-posting-options
 date: 2022-09-13 12:47

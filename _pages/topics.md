@@ -8,7 +8,7 @@ permalink: /blog/topics
 
 <h2 id="categories">Categories</h2>
 <div class="tag-list">
-<a href="/blog">Essays ({{ site.categories.essays | size }})</a>
+<a href="/blog">Articles ({{ site.categories.articles | size }})</a>
 <a href="/blog/now">Now ({{ site.categories.now | size }})</a>
 <a href="/notes">Recent notes</a>
 </div>
@@ -33,6 +33,6 @@ permalink: /blog/topics
 	{% include blog-listing.html %}
 {% endfor %}
 
-<p><a href="#" class="internal-link">All Tags &#8593;</a></p>
+<p><a href="#" class="internal-link">All Topics &#8593;</a></p>
 
 {% endfor %}
