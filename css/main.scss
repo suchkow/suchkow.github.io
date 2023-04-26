@@ -1,10 +1,10 @@
 ---
 ---
 
-$body-1-typeface: IBM Plex Sans, sans-serif;
-$body-2-typeface: Martian Grotesk Cn, sans-serif;
-$heading-1-typeface: Martian Grotesk sWd, sans-serif;
-$heading-2-typeface: IBM Plex Sans, sans-serif;
+$body-ibm: IBM Plex Sans, sans-serif;
+$body-martian-cn: Martian Grotesk Cn, sans-serif;
+$heading-martian-swd: Martian Grotesk sWd, sans-serif;
+$heading-ibm: IBM Plex Sans, sans-serif;
 $mono-typeface: IBM Plex Mono, monospace;
 $text-width: 800px;
 
@@ -103,7 +103,7 @@ html {
 html {
   background-color: var(--main-background-color);
   color: var(--main-text-color); 
-  font-family: $body-1-typeface;
+  font-family: $body-ibm;
   font-feature-settings: "kern" on;
   font-variant-ligatures: common-ligatures;
   height: 100%;
@@ -133,7 +133,7 @@ p, li, details, summary {
 }
 
 nav {
-  font-family: $body-2-typeface;
+  font-family: $body-martian-cn;
   color: var(--light-text-color);
   font-size: var(--small-font-size);
   margin: 0;
@@ -151,7 +151,7 @@ main {
 }
 
 header {
-  font-family: $heading-1-typeface;
+  font-family: $heading-martian-swd;
   margin: calc(3 * var(--line-height)) 0 calc(1.5 * var(--line-height)) 0;
   max-width: $text-width;
   width: 100%;
@@ -164,7 +164,7 @@ header {
     padding-bottom: calc(.25 * var(--line-height));
   }
   nav {
-    font-family: $heading-2-typeface;
+    font-family: $heading-ibm;
     margin-top: calc(.25 * var(--line-height));
   }
 }
@@ -201,7 +201,7 @@ footer {
 }
 
 h2, h3 {
-  font-family: $heading-1-typeface;
+  font-family: $heading-martian-swd;
   font-size: var(--h2-font-size);
   margin: calc(var(--line-height) * 1.5) 0 0 0;
   font-weight: bold;
@@ -239,7 +239,7 @@ blockquote {
 }
 
 a {
-  font-family: $body-2-typeface;
+  font-family: $body-ibm;
   color: var(--main-text-color);
   text-decoration-color: var(--extra-light-text-color);
 }
@@ -352,7 +352,7 @@ aside, .callout {
 // homepage 
 
 .internal-link, .internal-link a {
-  font-family: $body-2-typeface;
+  font-family: $body-martian-cn;
   color: var(--light-text-color);
   font-size: var(--small-font-size);
   text-decoration: none;
@@ -407,7 +407,7 @@ aside, .callout {
   color: var(--main-text-color);
   height: calc( 1.5 * var(--line-height));
   flex: 5 1 auto;
-  font-family: $body-1-typeface;
+  font-family: $body-ibm;
   font-size: var(--small-font-size);
   margin-top: 0;
   min-width: 50%;
@@ -427,7 +427,7 @@ aside, .callout {
   border: 1px solid var(--light-border-color);
   border-radius: 4px;
   color: var(--main-text-color);
-  font-family: $body-1-typeface;
+  font-family: $body-ibm;
   font-size: var(--small-font-size);
   font-weight: normal;
   margin: 0 0 0 .5em;
@@ -473,13 +473,13 @@ aside, .callout {
   margin: 0;
   padding: calc(1.25 * var(--line-height)) 0;
   h1 {
-    font-family: $heading-1-typeface;
+    font-family: $heading-ibm;
     text-transform: uppercase;
     letter-spacing: .1em;
     margin: 0;
   }
   h2 {
-    font-family: $heading-1-typeface;
+    font-family: $heading-ibm;
     font-size: var(--body-font-size);
   }
   h1 + p, h2 + p {
@@ -488,6 +488,7 @@ aside, .callout {
 }
 
 .note-date-line {
+  font-family: $body-ibm;
   color: var(--light-text-color);
   font-size: var(--small-text-size);
   a {
