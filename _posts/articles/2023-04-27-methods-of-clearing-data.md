@@ -17,7 +17,7 @@ CSV (Comma Separated Values) files are a popular way of storing data in tabular 
 
 One way of clearing data in CSV files is to delete rows that contain specific values. For example, let's say we have a CSV file containing data about employees and their salaries. If we want to clear all the data for employees who earn less than $50,000, we can use the following Python code:
 
-```Python 3.11
+```python
 import csv
 
 with open('employee_data.csv', 'r') as file:
@@ -27,7 +27,6 @@ with open('employee_data.csv', 'r') as file:
 with open('employee_data_cleaned.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerows(rows)
-
 ```
 
 This code reads the data from the input CSV file, filters the rows that meet the condition (salary >= $50,000), and writes the filtered data to a new CSV file.
@@ -36,13 +35,12 @@ This code reads the data from the input CSV file, filters the rows that meet the
 
 Another common issue with CSV files is duplicate rows. These rows can occur due to various reasons such as incorrect data entry or system errors. To remove duplicate rows from a CSV file, we can use the Pandas library in Python. The following code demonstrates how to remove duplicate rows from a CSV file using Pandas:
 
-```Python 3.11
+```python
 import pandas as pd
 
 df = pd.read_csv('employee_data.csv')
 df.drop_duplicates(inplace=True)
 df.to_csv('employee_data_cleaned.csv', index=False)
-
 ```
 
 This code reads the data from the input CSV file into a Pandas DataFrame, removes the duplicate rows, and writes the cleaned data to a new CSV file.
@@ -51,7 +49,7 @@ This code reads the data from the input CSV file into a Pandas DataFrame, remove
 
 Sometimes, CSV files may contain incorrect data that needs to be replaced. For example, let's say we have a CSV file containing data about students and their grades. If there is a spelling mistake in a student's name, we can use Python to replace it with the correct spelling. The following code demonstrates how to replace incorrect data in a CSV file:
 
-```Python 3.11
+```python
 import csv
 
 with open('student_data.csv', 'r') as file:
@@ -61,7 +59,6 @@ with open('student_data.csv', 'r') as file:
 with open('student_data_cleaned.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerows(rows)
-
 ```
 
 This code reads the data from the input CSV file, replaces the incorrect data (jon with john), and writes the cleaned data to a new CSV file.
