@@ -82,6 +82,7 @@ html {
   --main-background-color: white;
   --main-text-color: #2c4942;
   --underline-color: hsl(0, 0%, 50%);
+  --tag-background: #d2dcdc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -90,10 +91,11 @@ html {
     --extra-light-text-color: hsl(0, 0%, 55%);
     --light-border-color: hsl(0, 0%, 30%);
     --light-text-color: hsl(0, 0%, 65%);
-    --link-color: hsl(193, 85%, 50%); 
-    --main-background-color: hsl(200, 3%, 12%);
+    --link-color: hsl(193, 85%, 50%);
+    --main-background-color: #121212; // hsl(200, 3%, 12%);
     --main-text-color: #d2dcdc;
-    --underline-color: hsl(0, 0%, 50%); 
+    --underline-color: hsl(0, 0%, 50%);
+    --tag-background: #2c4942; // #2E4F4F;
   }
   p {
     letter-spacing: .005em;
@@ -511,15 +513,10 @@ mark {
 // link hover styles at the end so they apply to all links
 
 a:hover {
-  color: var(--link-color);
-  text-decoration: underline;
-  text-decoration-style: solid;
+  var(--light-text-color);
+  text-decoration: underline solid;
+  text-decoration-color: currentColor;
 }
-
-a:visited:hover {
-  color: #e33;//#EA1C00;
-}
-
 
 // tags in articles
 
@@ -541,8 +538,8 @@ a:visited:hover {
 }
 
 .tag:hover {
-  background-color: #d2dcdc;
-  border: solid 1px #d2dcdc;
+  background-color: var(--tag-background);
+  border: solid 1px var(--tag-background);
   color: var(--main-text-color);
   padding: 0 6px 0 6px;
 }
