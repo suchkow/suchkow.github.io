@@ -526,7 +526,7 @@ a:visited:hover {
 .tag {
   font-family: $heading-martian-swd;
   background: none;
-  border-color: black;
+  border: solid black;
   border-width: 1px 3px 3px 1px;
   border-radius: 0 0 0 0;
   color: var(--main-text-color);
@@ -540,8 +540,7 @@ a:visited:hover {
 
 .tag:hover {
   background-color: #e33;
-  border-color: black;
-  border-width: 3px 3px 3px 3px;
+  border: 3px solid black;
   color: var(--main-text-color);
 }
 
