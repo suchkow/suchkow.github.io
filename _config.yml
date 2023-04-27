@@ -15,7 +15,6 @@ social-media-image-url: /static/social-media-images/favicon.png
 twitter-card-image: do.jpg
 iOS-icon: /static/social-media-images/favicon.png
 
-# leave these unless you are more familiar with jekyll settings
 
 highlighter: rouge
 markdown: kramdown

@@ -17,7 +17,8 @@
     {% if page.syntax %}<link rel='stylesheet' type='text/css' href='/css/code.css'>{% endif %}
     <meta name="description" content="{% if page.description %}{{ page.description }}
     {% else %}{{ site.description }}{% endif %}">
-    <meta name="author" content="{{ site.author }}">
+    <meta name="author" content="{% if page.author %}{{ page.author }}
+    {% else %}{{ site.author }}{% endif %}">
     <link rel="canonical" href="{% if page.canonical %}{{ site.url }}{{ page.canonical }}{% else %}{{ page.url | absolute_url }}{% endif %}">
     <meta name="generator" content="Jekyll" />
     
