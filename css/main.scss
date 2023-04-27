@@ -513,7 +513,7 @@ mark {
 // link hover styles at the end so they apply to all links
 
 a:hover {
-  var(--light-text-color);
+  color: var(--light-text-color);
   text-decoration: underline solid;
   text-decoration-color: currentColor;
 }
