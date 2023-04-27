@@ -3,17 +3,14 @@
 
 <main>
 <article>
-
 <header>
-
 	<h1 class="post-title">{%- if page.nowPage -%}{{ site.categories.now[0].title }}{%- else -%}{{ page.title }}{%- endif -%}</h1>
 	<p class="post-author-and-time">
-		<span>{% for author in page.author %}{% include author.html %}{% endfor %}</span>
+	<span>{% for author in page.author %}{% include author.html %}{% endfor %}</span>
 	{%- unless page.category contains "english-guide" -%}
-	&nbsp;&middot;&nbsp;<time datetime="{{ postDate | date: '%Y-%m-%d' }}">
+	<time datetime="{{ postDate | date: '%Y-%m-%d' }}">
 	{%- unless page.custom-date %}{{ postDate | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ postDate | date: "%Y" }}{%- else -%}{{ page.custom-date }}{%- endunless -%}</time>{% endunless %}</p>
 	<span>{% for tag in page.tags %}{% include tags.html %}{% endfor %}</span>
-
 </header>
 
 {%- if page.categories contains "now" -%}
@@ -25,17 +22,13 @@
 {%- endif -%}
 
 {{ content }}
-
 </article>
 
 {%- if page.categories contains "now" -%}
 	{%- include now-listing.html -%}
 {%- endif -%}
-
 </main>
 
 {%- include footer.html -%}
-
 </body>
-
 </html>
