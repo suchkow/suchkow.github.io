@@ -1,3 +1,23 @@
 {% if forloop.last != true %}
-<a class="internal-link" href="/blog" rel="author" title="All articles by {{ author }}">{{ author }}</a>&nbsp;&middot;&nbsp;
+<a class="internal-link" href="/blog" title="All articles by {{ author }}">{{ author }}</a>&nbsp;&middot;&nbsp;
+{% endif %}
+
+
+
+{% assign authorCount = page.authors | size %}
+
+{% if authorCount == 0 %}
+    {{ site.author }}
+{% elsif authorCount == 1 %}
+    {{ page.authors | first }}
+{% else %}
+    {% for author in page.authors %}
+        {% if forloop.first %}
+            {{ author }}
+        {% elsif forloop.last %}
+            and {{ author }}
+        {% else %}
+            , {{ author }}
+        {% endif %}
+    {% endfor %}
 {% endif %}

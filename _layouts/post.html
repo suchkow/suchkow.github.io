@@ -7,9 +7,26 @@
 	<h1 class="post-title">{%- if page.nowPage -%}{{ site.categories.now[0].title }}{%- else -%}{{ page.title }}{%- endif -%}</h1>
 	<p class="post-author-and-time">
 
-	{% if page.authors.size == 0 %}
-	<span>{% for author in page.authors %}{% include author.html %}{% endfor %}</span> <!-- <a href="/" title="Home" rel="author" class="internal-link">Derek Kedziora</a> -->
-	{% else %}{{ site.author }}}
+	<!-- {% if page.authors | size == 0 %}
+	<span>{% for author in page.authors %}{% include author.html %}{% endfor %}</span> <a href="/" title="Home" rel="author" class="internal-link">Derek Kedziora</a>
+	{% else %}{{ site.author }}
+	{% endif %} -->
+
+	{% assign authorCount = page.authors | size %}
+	{% if authorCount == 0 %}
+		{{ site.author }}
+	{% elsif authorCount == 1 %}
+		{{ page.authors | first }}
+	{% else %}
+		{% for author in page.authors %}
+			{% if forloop.first %}
+				{{ author }}
+			{% elsif forloop.last %}
+				and {{ author }}
+			{% else %}
+				, {{ author }}
+			{% endif %}
+		{% endfor %}
 	{% endif %}
 
 	{%- unless page.category contains "english-guide" -%}
