@@ -16,17 +16,9 @@
 	{% if authorCount == 0 %}
 		{{ site.author }}
 	{% elsif authorCount == 1 %}
-		{{ page.authors | first }}
+		<a class="internal-link" href="/blog" title="All articles by {{ author }}">{{ page.authors | first }}</a>&nbsp;&middot;&nbsp;
 	{% else %}
-		{% for author in page.authors %}
-			{% if forloop.first %}
-				{{ author }}
-			{% elsif forloop.last %}
-				and {{ author }}
-			{% else %}
-				, {{ author }}
-			{% endif %}
-		{% endfor %}
+		<span>{% for author in page.authors %}{{ include author.html }}{% endfor %}</span>
 	{% endif %}
 
 	{%- unless page.category contains "english-guide" -%}
