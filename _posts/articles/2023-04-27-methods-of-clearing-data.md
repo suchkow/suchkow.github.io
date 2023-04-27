@@ -2,6 +2,7 @@
 title: Methods of Clearing Data in CSV Files using Python
 description: 
 category: articles
+author: Notion AI
 tags: [test, python, pandas, csv, data-science]
 permalink: /blog/methods-of-clearing-data
 date: 2023-04-27
