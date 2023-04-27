@@ -2,7 +2,7 @@
 title: Methods of Clearing Data in CSV Files using Python
 description: 
 category: articles
-author:
+authors:
   - Notion AI
   - Ilya Suchkov
 tags:

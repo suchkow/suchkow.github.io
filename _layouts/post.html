@@ -6,7 +6,7 @@
 <header>
 	<h1 class="post-title">{%- if page.nowPage -%}{{ site.categories.now[0].title }}{%- else -%}{{ page.title }}{%- endif -%}</h1>
 	<p class="post-author-and-time">
-	<span>{% for author in page.author %}{% include author.html %}{% endfor %}</span> <!-- <a href="/" title="Home" rel="author" class="internal-link">Derek Kedziora</a> -->
+	<span>{% for author in page.authors %}{% include author.html %}{% endfor %}</span> <!-- <a href="/" title="Home" rel="author" class="internal-link">Derek Kedziora</a> -->
 	{%- unless page.category contains "english-guide" -%}
 	<time datetime="{{ postDate | date: '%Y-%m-%d' }}">
 	{%- unless page.custom-date %}{{ postDate | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ postDate | date: "%Y" }}{%- else -%}{{ page.custom-date }}{%- endunless -%}</time>{% endunless %}</p>

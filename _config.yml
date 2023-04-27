@@ -55,6 +55,7 @@ collections:
     output: true
   unlisted:
     output: true
+  authors:
 
 plugins:
   - jekyll-feed
