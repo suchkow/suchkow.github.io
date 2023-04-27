@@ -2,7 +2,8 @@
 title: Testing
 description: Testing post to see the author
 category: articles
-tags: [test,]
+tags:
+  - test
 permalink: /blog/testing-post
 date: 2023-04-25
 syntax: true
