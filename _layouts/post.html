@@ -11,7 +11,7 @@
 		{%- if authorCount == 1 -%}
 			<a class="internal-link" href="/blog" title="All articles by {{ author }}">{{ page.authors | first }}</a>&nbsp;&middot;&nbsp;
 		{%- else -%}
-			<span>{%- for author in page.authors -%}{{ include author.html }}{%- endfor -%}</span>
+			<span class="internal-link">{%- for author in page.authors -%}{{ include author.html }}{%- endfor -%}</span>
 		{%- endif -%}
 	{%- else -%}
 		{{ site.author }}
