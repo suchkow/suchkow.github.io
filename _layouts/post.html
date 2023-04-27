@@ -6,19 +6,21 @@
 <header>
 	<h1 class="post-title">{%- if page.nowPage -%}{{ site.categories.now[0].title }}{%- else -%}{{ page.title }}{%- endif -%}</h1>
 	<p class="post-author-and-time">
-
-	{% assign authorCount = page.authors | size %}
-	{% if authorCount == 0 %}
+	{%- if page.authors -%}
+		{%- assign authorCount = page.authors | size -%}
+		{%- if authorCount == 1 -%}
+			<a class="internal-link" href="/blog" title="All articles by {{ author }}">{{ page.authors | first }}</a>&nbsp;&middot;&nbsp;
+		{%- else -%}
+			<span>{%- for author in page.authors -%}{{ include author.html }}{%- endfor -%}</span>
+		{%- endif -%}
+	{%- else -%}
 		{{ site.author }}
-	{% elsif authorCount == 1 %}
-		<a class="internal-link" href="/blog" title="All articles by {{ author }}">{{ page.authors | first }}</a>&nbsp;&middot;&nbsp;
-	{% else %}
-		<span>{% for author in page.authors %}{{ include author.html }}{% endfor %}</span>
-	{% endif %}
+	{%- endif -%}
 
 	{%- unless page.category contains "english-guide" -%}
 	<time datetime="{{ postDate | date: '%Y-%m-%d' }}">
 	{%- unless page.custom-date %}{{ postDate | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ postDate | date: "%Y" }}{%- else -%}{{ page.custom-date }}{%- endunless -%}</time>{% endunless %}</p>
+
 	<span>{% for tag in page.tags %}{% include tags.html %}{% endfor %}</span>
 </header>
 
