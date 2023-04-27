@@ -11,10 +11,12 @@
 		{%- if authorCount == 1 -%}
 			<a class="internal-link" href="/blog" title="All articles by {{ author }}">{{ page.authors | first }}</a>&nbsp;&middot;&nbsp;
 		{%- else -%}
-			<span class="internal-link">{%- for author in page.authors -%}{{ include author.html }}{%- endfor -%}</span>
+			{%- for author in page.authors -%}
+				<a class="internal-link">{{ author }}&nbsp;&middot;&nbsp;</a>
+			{%- endfor -%}
 		{%- endif -%}
 	{%- else -%}
-		{{ site.author }}
+		<a class="internal-link" href="/blog" title="All articles by {{ author }}">{{ site.author }}</a>&nbsp;&middot;&nbsp;
 	{%- endif -%}
 
 	{%- unless page.category contains "english-guide" -%}
