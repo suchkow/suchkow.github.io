@@ -184,6 +184,12 @@ time {
   margin-top: calc(.125 * var(--line-height));
 }
 
+.post-author-and-time a {
+  font-family: $heading-ibm;
+  color: var(--light-text-color);
+  margin-top: calc(.125 * var(--line-height));
+}
+
 footer {
   border-top: 1px solid var(--light-text-color);
   color: var(--light-text-color);
