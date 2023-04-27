@@ -12,7 +12,7 @@
 			<a class="internal-link" href="/blog" title="All articles by {{ author }}">{{ page.authors | first }}</a>&nbsp;&middot;&nbsp;
 		{%- else -%}
 			{%- for author in page.authors -%}
-				<a class="internal-link">{{ author }}&nbsp;&middot;&nbsp;</a>
+				<a class="internal-link" href="/blog" title="All articles by {{ author }}">{{ author }}</a>&nbsp;&middot;&nbsp;
 			{%- endfor -%}
 		{%- endif -%}
 	{%- else -%}
