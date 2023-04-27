@@ -525,9 +525,9 @@ a:visited:hover {
 
 .tag {
   font-family: $heading-martian-swd;
-  background: var(--box-background-color);
+  background: none;
   border-color: black;
-  border-width: 1px 3px 1px 3px;
+  border-width: 1px 3px 3px 1px;
   border-radius: 0 0 0 0;
   color: var(--main-text-color);
   display: inline-block;
