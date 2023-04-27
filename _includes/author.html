@@ -10,3 +10,8 @@
 {% else %}
 {% for author in page.authors %}{{ author }}&nbsp;&middot;&nbsp;{% endfor %}
 {% endif %} -->
+
+<!-- {% if page.authors | size == 0 %}
+<span>{% for author in page.authors %}{% include author.html %}{% endfor %}</span> <a href="/" title="Home" rel="author" class="internal-link">Derek Kedziora</a>
+{% else %}{{ site.author }}
+{% endif %} -->
