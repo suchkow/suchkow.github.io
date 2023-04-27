@@ -1,15 +1,13 @@
 ---
-title: Testing
-description: Testing post to see the author 
+title: Methods of Clearing Data in CSV Files using Python
+description: 
 category: articles
 tags: [test, python, pandas, csv, data-science]
-permalink: /blog/testing-post
-date: 2023-04-25
+permalink: /blog/methods-of-clearing-data
+date: 2023-04-27
 syntax: true
 ---
 
-
-# Methods of Clearing Data in CSV Files using Python
 
 ## Introduction
 
