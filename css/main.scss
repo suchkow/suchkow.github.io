@@ -525,8 +525,9 @@ a:visited:hover {
 
 .tag {
   font-family: $heading-martian-swd;
-  background: var(--underline-color);
-  border: none;
+  background: none; // var(--box-background-color);
+  border-color: var(--main-text-color);
+  border-width: 0 5px 5px 0;
   border-radius: 0 0 0 0;
   color: var(--main-text-color);
   display: inline-block;
@@ -538,10 +539,8 @@ a:visited:hover {
 }
 
 .tag:hover {
-  background-color: #323550;
+  background-color: #c92d2d;
+  border-color: var(--main-text-color);
+  border-width: 5px 5px 5px 5px;
   color: white;
-}
-
-.tag:hover::after {
-  border-left-color: #503d3d;
 }
