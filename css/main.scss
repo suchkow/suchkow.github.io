@@ -164,7 +164,7 @@ header {
     font-size: var(--h1-font-size);
     font-variant-numeric: normal;
     line-height: 1.1;
-    margin-bottom: 0;
+    margin-bottom: 1px;
     padding-bottom: calc(.25 * var(--line-height));
   }
   nav {
@@ -210,13 +210,10 @@ title {
     font-weight: bold;
     text-align: right;
     color: var(--reverse-main-text);
-    background-color: #1D2336; // #E2F700;
-    border-right: solid white 0.1px;
-    border-top: solid white 1px;
-    border-bottom: solid white 1px;
+    background-color: #87A0AF;
+    border: solid white 1px;
+    border-left: none;
     padding: 5px;
-    // padding-left: 2px;
-    // padding-right: 5px;
   }
 }
 
@@ -225,19 +222,21 @@ title {
   font-size: var(--small-font-size);
   font-weight: bold;
   background: #4042EE;
-  border-right: solid white 0.1px;
-  border-top: solid white 1px;
-  border-bottom: solid white 1px;
-  color: var(--reverse-main-text);
+  // background-color: transparent;
+  border: solid white 1px;
+  border-left: none;
+  color: var(--reverse-main-text); // color: #4042EE; // var(--reverse-main-text);
   height: 30px;
-  padding: 5px;// padding: 0 6px 0 6px;
+  padding: 5px;
   position: static;
   text-align: center;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .author:hover{
+  color: var(--main-text-color);
   text-decoration: none;
+  background-color: #E2F700;
 }
 
 .tag-span {
