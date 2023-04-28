@@ -156,7 +156,7 @@ main {
 
 header {
   font-family: $heading-martian-swd;
-  //margin: calc(3 * var(--line-height)) 0 calc(1.5 * var(--line-height)) 0;
+  // margin: calc(3 * var(--line-height)) 0 calc(1.5 * var(--line-height)) 0;
   max-width: $text-width;
   width: 100%;
   h1 {
@@ -171,6 +171,20 @@ header {
     font-family: $heading-ibm;
     margin-top: calc(.25 * var(--line-height));
   }
+  div img{
+    float: left;
+    background: transparent;
+    margin-bottom: 1px;
+  }
+  div h1{
+    position: relative;
+  }
+}
+
+img{
+  float: left;
+  background: transparent;
+  margin-bottom: 1px;
 }
 
 title {

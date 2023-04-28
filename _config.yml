@@ -9,11 +9,11 @@ language: en_US
 
 # social images
 
-favicon: /static/social-media-images/favicon.png
+favicon: /static/logos/logo.svg
 twitter: "@good-luck-twitter-existing-in-a-few-years"
-social-media-image-url: /static/social-media-images/favicon.png
+social-media-image-url: /static/logos/logo.svg
 twitter-card-image: do.jpg
-iOS-icon: /static/social-media-images/favicon.png
+iOS-icon: /static/logos/logo.svg
 
 
 highlighter: rouge

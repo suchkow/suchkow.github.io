@@ -5,10 +5,13 @@
 <main class="index">
 
 <header>
-	<h1 class="index-title">🌀{{ site.title }}</h1>
-		<nav>
-			<a href="/blog" title="Check out latest articles">Blog</a>&nbsp;|&nbsp;<a href="/about" title="Get more acquainted">About</a>&nbsp;|&nbsp;<a href="/contact" title="Ways to reach Ilya">Contacts</a>&nbsp;
-		</nav>
+	<div class="logo">
+		<img src="static/logos/logo.svg" alt="logo" role="img" width="30" height="30"/>
+		<h1 class="index-title">&nbsp;{{ site.title }}</h1>
+	</div>
+	<nav>
+		<a href="/blog" title="Check out latest articles">Blog</a>&nbsp;|&nbsp;<a href="/about" title="Get more acquainted">About</a>&nbsp;|&nbsp;<a href="/contact" title="Ways to reach Ilya">Contacts</a>&nbsp;
+	</nav>
 </header>
 
 {{ content }}
