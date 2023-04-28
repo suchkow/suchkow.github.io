@@ -160,21 +160,42 @@ header {
   max-width: $text-width;
   width: 100%;
   h1 {
-    border-bottom: 1px solid var(--light-text-color);
+    // border-bottom: 1px solid var(--light-text-color);
     font-size: var(--h1-font-size);
     font-variant-numeric: normal;
-    line-height: 1.1;
+    line-height: 2;
     margin-bottom: 1px;
-    padding-bottom: calc(.25 * var(--line-height));
+    padding-bottom: calc(0.8 * var(--line-height));
   }
-  nav {
+  nav span a{
     font-family: $heading-ibm;
-    margin-top: calc(.25 * var(--line-height));
+    font-size: var(--small-font-size);
+    font-weight: bold;
+    background: #4042EE;
+    color: var(--main-text-color);
+    height: 30px;
+    padding: 5px 10px;
+    position: static;
+    text-align: center;
+    transition: 0.4s;
+  }
+  nav span a:hover{
+    font-family: $heading-ibm;
+    font-size: var(--small-font-size);
+    font-weight: bold;
+    background: #4042EE;
+    color: var(--main-text-color);
+    text-decoration: none;
+    height: 30px;
+    padding: 5px 10px;
+    position: static;
+    text-align: center;
+    transition: 0.4s;
   }
   div img{
     float: left;
     background: transparent;
-    margin-bottom: 1px;
+    // margin-bottom: 1px;
   }
   div h1{
     position: relative;
