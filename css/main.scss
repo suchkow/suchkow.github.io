@@ -156,7 +156,7 @@ main {
 
 header {
   font-family: $heading-martian-swd;
-  margin: calc(3 * var(--line-height)) 0 calc(1.5 * var(--line-height)) 0;
+  //margin: calc(3 * var(--line-height)) 0 calc(1.5 * var(--line-height)) 0;
   max-width: $text-width;
   width: 100%;
   h1 {
@@ -164,7 +164,7 @@ header {
     font-size: var(--h1-font-size);
     font-variant-numeric: normal;
     line-height: 1.1;
-    margin: 0;
+    margin-bottom: 0;
     padding-bottom: calc(.25 * var(--line-height));
   }
   nav {
@@ -177,28 +177,21 @@ title {
   display: none;
 }
 
-time {
-  color: var(--light-text-color);
-  font-size: var(--small-font-size);
-}
+// ----------------------------------------------
 
-// color: var(--reverse-main-text);
 .post-title {
   background-color: transparent;
   text-align: left;
   border-bottom: none;
+  padding-bottom: 0;
   span {
-    // background-color: #D2DCDCFF; // #E2F700;
     display: flex;
-
     a {
       color: var(--reverse-main-text);
       font-family: $heading-martian-swd;
-      // border: solid 2px #86a0af;
       background-color: #4042EE;
       padding: 5px;
     }
-
     a:hover {
       color: var(--reverse-main-text);
       text-decoration: none;
@@ -206,19 +199,50 @@ time {
   }
 }
 
-.post-author-and-time {
-  font-family: $heading-ibm;
-  color: var(--extra-light-text-color);
-  margin-top: calc(.125 * var(--line-height));
-  a {
+.author-span {
+  display: block;
+  margin-top: 0;// 5px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  time {
     font-family: $heading-ibm;
-    color: var(--light-text-color);
-    margin-top: calc(.125 * var(--line-height));
+    font-size: var(--small-font-size);
+    font-weight: bold;
+    text-align: right;
+    color: var(--reverse-main-text);
+    background-color: #1D2336; // #E2F700;
+    border-right: solid white 0.1px;
+    border-top: solid white 1px;
+    border-bottom: solid white 1px;
+    padding: 5px;
+    // padding-left: 2px;
+    // padding-right: 5px;
   }
 }
 
-.post-tags {
-  padding-left: 0;
+.author {
+  font-family: $heading-ibm;
+  font-size: var(--small-font-size);
+  font-weight: bold;
+  background: #4042EE;
+  border-right: solid white 0.1px;
+  border-top: solid white 1px;
+  border-bottom: solid white 1px;
+  color: var(--reverse-main-text);
+  height: 30px;
+  padding: 5px;// padding: 0 6px 0 6px;
+  position: static;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.author:hover{
+  text-decoration: none;
+}
+
+.tag-span {
+  display: block;
+  margin-top: 20px;
 }
 
 .tag {
@@ -226,7 +250,7 @@ time {
   background: none;
   border: solid 1px #86a0af;
   color: var(--main-text-color);
-  display: inline-list-item;
+  margin-top: 0;
   height: 32px;
   padding: 0 6px 0 6px;
   position: static;
@@ -245,6 +269,8 @@ time {
   border-left-color: #503d3d;
   padding: 0 5px 0 5px;
 }
+
+// ----------------------------------------------
 
 footer {
   border-top: 1px solid var(--light-text-color);
