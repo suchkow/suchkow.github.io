@@ -190,6 +190,7 @@ time {
   span {
     // background-color: #D2DCDCFF; // #E2F700;
     display: flex;
+
     a {
       color: var(--reverse-main-text);
       font-family: $heading-martian-swd;
@@ -197,10 +198,12 @@ time {
       background-color: #4042EE;
       padding: 5px;
     }
+
     a:hover {
       color: var(--reverse-main-text);
       text-decoration: none;
     }
+  }
 }
 
 .post-author-and-time {
@@ -568,5 +571,3 @@ a:hover {
   text-decoration: underline solid;
   text-decoration-color: currentColor;
 }
-
-// tags in articles
