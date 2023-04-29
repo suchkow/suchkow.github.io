@@ -20,24 +20,25 @@
 
 {{ content }}
 
-<!--
-<h2>Latest posts</h2>
+<h2 class="index-latest-posts"><span>Latest publications</span></h2>
+
 {%- assign i = 0 -%}
 {% assign display-post-type = true %}
 
+<div class="cards">
 {%- for post in site.posts -%}
 	{%- unless post.categories contains "rss-club" or post.categories contains "unlisted"-%}
 		{%- assign i = i | plus: 1 -%}
 		{%- include blog-listing.html -%}
 	{% endunless %}
-	
-	{%- if i == 3 -%}
+
+	{%- if i == 6 -%}
 		{%- break -%}
 	{%- endif -%}
-
 {% endfor %}
+</div>
 
-<p><a href="/blog" class="internal-link">All posts →</a></p>-->
+<p><a href="/blog" class="internal-link">All posts →</a></p>
 
 </main>
 

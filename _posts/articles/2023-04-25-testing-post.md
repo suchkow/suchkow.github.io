@@ -1,5 +1,5 @@
 ---
-title: Testing
+title: 'This is a super-long title to check how it will align in the post card: Volume 2, Part XXIII'
 description: Testing post to see the author
 category: articles
 tags:

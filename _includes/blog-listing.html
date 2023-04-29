@@ -1,6 +1,5 @@
 {% comment %}
-This section adds pretty ordinal endings (i.e. st, nd, th) to dates in
-the blog post listing.  
+This section adds pretty ordinal endings (i.e. st, nd, th) to dates in the blog post listing.
 {% endcomment %}
 
 
@@ -38,10 +37,33 @@ The conditional makes the first now post link to /now instead of the post permal
 {% endif %}
 
 
+<div class="card">
+	<span class="date">
+		<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ post.date | date: "%Y" }}</time>
+	</span>
 
-<p><a href="{{LinkToPost}}" title="{{post.title}}" class="blog-listing-link">{{ post.title }}</a>
-<br>
-<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ post.date | date: "%Y" }}</time></p>
+	<div class="title-preview">
+		<p class="overflow-string">{{ post.title }}</p>
+	</div>
 
+	<i class="fa-sharp fa-solid fa-square-arrow-right"></i>
 
+	{%- if post.category == "articles" -%}
+		<button class="btn-article" onclick="openLink()"></button>
+	{%- endif -%}
 
+	{%- if LinkToPost == "/now" -%}
+		<button class="btn-now" onclick="openLink()"></button>
+	{%- endif -%}
+
+	{%- if post.category == "notes" -%}
+		<button class="btn-notes" onclick="openLink()"></button>
+	{%- endif -%}
+</div>
+<!--<div class="img-preview"></div>-->
+
+<script>
+	function openLink() {
+		window.open("/blog/topics#{{ tag }}");
+	}
+</script>
