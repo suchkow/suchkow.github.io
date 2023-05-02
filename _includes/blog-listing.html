@@ -38,6 +38,7 @@ The conditional makes the first now post link to /now instead of the post permal
 
 
 <div class="card">
+	<a href="/" class="">
 	<span class="date">
 		<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ post.date | date: "%Y" }}</time>
 	</span>
@@ -48,17 +49,18 @@ The conditional makes the first now post link to /now instead of the post permal
 
 	<i class="fa-sharp fa-solid fa-square-arrow-right"></i>
 
-	{%- if post.category == "articles" -%}
-		<button class="btn-article" onclick="openLink()"></button>
-	{%- endif -%}
+<!--	{%- if post.category == "articles" -%}-->
+<!--		<button class="btn-article" onclick="openLink()"></button>-->
+<!--	{%- endif -%}-->
 
-	{%- if LinkToPost == "/now" -%}
-		<button class="btn-now" onclick="openLink()"></button>
-	{%- endif -%}
+<!--	{%- if LinkToPost == "/now" -%}-->
+<!--		<button class="btn-now" onclick="openLink()"></button>-->
+<!--	{%- endif -%}-->
 
-	{%- if post.category == "notes" -%}
-		<button class="btn-notes" onclick="openLink()"></button>
-	{%- endif -%}
+<!--	{%- if post.category == "notes" -%}-->
+<!--		<button class="btn-notes" onclick="openLink()"></button>-->
+<!--	{%- endif -%}-->
+	</a>
 </div>
 <!--<div class="img-preview"></div>-->
 

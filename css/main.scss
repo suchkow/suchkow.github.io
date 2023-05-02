@@ -652,13 +652,13 @@ h2{
     margin-left: -1px;
     margin-bottom: 10px;
     overflow: hidden;
-    background-color: #132230;
+    background-color: transparent;// #132230;
 
     .date {
       z-index: 98;
       border-color: $card-border-color;
       border-right: none;
-      background-color: #1D2336;
+      background-color: #D2DCDC; // #1D2336;
       padding-top: 3px;
       padding-bottom: 3px;
       margin-top: -1px;
