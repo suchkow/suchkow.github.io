@@ -36,9 +36,8 @@ The conditional makes the first now post link to /now instead of the post permal
 	{% assign LinkToPost = post.url %}
 {% endif %}
 
-
-<div class="card">
-	<a href="/" class="">
+{%- if post.category == "articles" -%}
+<button class="card-article" title="" onclick="openLink()">
 	<span class="date">
 		<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ post.date | date: "%Y" }}</time>
 	</span>
@@ -48,24 +47,42 @@ The conditional makes the first now post link to /now instead of the post permal
 	</div>
 
 	<i class="fa-sharp fa-solid fa-square-arrow-right"></i>
+</button>
+{%- endif -%}
 
-<!--	{%- if post.category == "articles" -%}-->
-<!--		<button class="btn-article" onclick="openLink()"></button>-->
-<!--	{%- endif -%}-->
+{%- if post.category == "notes" -%}
+<button class="card-notes" title="" onclick="openLink()">
+	<span class="date">
+		<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ post.date | date: "%Y" }}</time>
+	</span>
 
-<!--	{%- if LinkToPost == "/now" -%}-->
-<!--		<button class="btn-now" onclick="openLink()"></button>-->
-<!--	{%- endif -%}-->
+	<div class="title-preview">
+		<p class="overflow-string">{{ post.title }}</p>
+	</div>
 
-<!--	{%- if post.category == "notes" -%}-->
-<!--		<button class="btn-notes" onclick="openLink()"></button>-->
-<!--	{%- endif -%}-->
-	</a>
-</div>
+	<i class="fa-sharp fa-solid fa-square-arrow-right"></i>
+</button>
+{%- endif -%}
+
+
+{%- if LinkToPost == "/now" -%}
+<button class="card-notes" title="" onclick="openLink()">
+	<span class="date">
+		<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ post.date | date: "%Y" }}</time>
+	</span>
+
+	<div class="title-preview">
+		<p class="overflow-string">{{ post.title }}</p>
+	</div>
+
+	<i class="fa-sharp fa-solid fa-square-arrow-right"></i>
+</button>
+{%- endif -%}
+
 <!--<div class="img-preview"></div>-->
 
 <script>
 	function openLink() {
-		window.open("/blog/topics#{{ tag }}");
+		window.open("{{ post.permalink }}");
 	}
 </script>

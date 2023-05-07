@@ -6,7 +6,21 @@ $body-martian-cn: Martian Grotesk Cn, sans-serif;
 $heading-martian-swd: Martian Grotesk sWd, sans-serif;
 $heading-ibm: IBM Plex Sans, sans-serif;
 $mono-typeface: IBM Plex Mono, monospace;
+
 $text-width: 850px;
+
+$ya-grey-light: #D2DCDC;
+$ya-grey: #87A0AF;
+$ya-blue: #4042EE;
+$ya-blue-mckinsey: #3857EA;
+$ya-blue-dark: #1D2336;
+$ya-blue-dark-mckinsey: #132230;
+$ya-yellow: #E2F700;
+$ya-green: #00DA72;
+$ya-green-dark: #2c4942;
+$ya-pink: #FF92B7;
+$ya-orange: #FF5B17;
+
 
 @font-face {
   font-family: "Martian Grotesk Cn";
@@ -74,30 +88,32 @@ $text-width: 850px;
 }
 
 html {
-  --box-background-color: hsl(240, 9%, 90%);
-  --extra-light-text-color: hsl(240, 1%, 45%);
-  --light-border-color: hsl(0, 0%, 90%);
-  --light-text-color: hsl(240, 1%, 35%);
-  --link-color: rgb(65, 110, 210);
-  --main-background-color: white;
-  --main-text-color: #2c4942;
-  --reverse-main-text: white;
-  --underline-color: hsl(0, 0%, 50%);
+  --box-background: hsl(240, 9%, 90%);
+  --main-background: white;
+  --light-border: hsl(0, 0%, 90%);
+  --text-extra-light: hsl(240, 1%, 45%);
+  --text-light: hsl(240, 1%, 35%);
+  --text-main: #2c4942;
+  --text-main-reverse: white;
+  --text-link: rgb(65, 110, 210);
+  --underline: hsl(0, 0%, 50%);
   --tag-background: #d2dcdc;
+  --date-background: #d2dcdc
 }
 
 @media (prefers-color-scheme: dark) {
   html {
-    --box-background-color: hsl(0, 0%, 20%);
-    --extra-light-text-color: hsl(0, 0%, 55%);
-    --light-border-color: hsl(0, 0%, 30%);
-    --light-text-color: hsl(0, 0%, 65%);
-    --link-color: hsl(193, 85%, 50%);
-    --main-background-color: #121212; // hsl(200, 3%, 12%);
-    --main-text-color: #d2dcdc;
-    --reverse-main-text: #2c4942;
-    --underline-color: hsl(0, 0%, 50%);
+    --box-background: hsl(0, 0%, 20%);
+    --main-background: #121212;
+    --light-border: hsl(0, 0%, 30%);
+    --text-extra-light: hsl(0, 0%, 55%);
+    --text-light: hsl(0, 0%, 65%);
+    --text-link: hsl(193, 85%, 50%);
+    --text-main: #d2dcdc;
+    --text-main-reverse: #2c4942;
+    --underline: hsl(0, 0%, 50%);
     --tag-background: #2c4942; // #2E4F4F;
+    --date-background: #1D2336;
   }
   p {
     letter-spacing: .005em;
@@ -105,8 +121,8 @@ html {
 }
 
 html {
-  background-color: var(--main-background-color);
-  color: var(--main-text-color); 
+  background-color: var(--main-background);
+  color: var(--text-main);
   font-family: $body-ibm;
   font-feature-settings: "kern" on;
   font-variant-ligatures: common-ligatures;
@@ -138,11 +154,11 @@ p, li, details, summary {
 
 nav {
   font-family: $body-martian-cn;
-  color: var(--light-text-color);
+  color: #D2DCDC;
   font-size: var(--small-font-size);
   margin: 0;
   a {
-    color: var(--light-text-color);
+    color: #D2DCDC;
     text-decoration: none;
   }
 }
@@ -171,8 +187,8 @@ header {
     font-family: $heading-ibm;
     font-size: var(--small-font-size);
     font-weight: bold;
-    background: #4042EE;
-    color: var(--main-text-color);
+    background: $ya-blue;
+    color: $ya-grey-light;
     height: 30px;
     padding: 5px 10px;
     position: static;
@@ -183,8 +199,8 @@ header {
     font-family: $heading-ibm;
     font-size: var(--small-font-size);
     font-weight: bold;
-    background: #4042EE;
-    color: var(--main-text-color);
+    background: $ya-blue;
+    color: $ya-grey-light;
     text-decoration: none;
     height: 30px;
     padding: 5px 10px;
@@ -222,13 +238,13 @@ title {
   span {
     display: flex;
     a {
-      color: var(--reverse-main-text);
+      color: var(--text-main-reverse);
       font-family: $heading-martian-swd;
       background-color: #4042EE;
       padding: 5px;
     }
     a:hover {
-      color: var(--reverse-main-text);
+      color: var(--text-main-reverse);
       text-decoration: none;
     }
   }
@@ -244,7 +260,7 @@ title {
     font-size: var(--small-font-size);
     font-weight: bold;
     text-align: right;
-    color: var(--reverse-main-text);
+    color: var(--text-main-reverse);
     background-color: #87A0AF;
     border: solid white 1px;
     border-left: none;
@@ -260,7 +276,7 @@ title {
   // background-color: transparent;
   border: solid white 1px;
   border-left: none;
-  color: var(--reverse-main-text); // color: #4042EE; // var(--reverse-main-text);
+  color: var(--text-main-reverse); // color: #4042EE; // var(--reverse-main-text);
   height: 30px;
   padding: 5px;
   position: static;
@@ -269,7 +285,7 @@ title {
 }
 
 .author:hover{
-  color: var(--main-text-color);
+  color: var(--text-main);
   text-decoration: none;
   background-color: #E2F700;
 }
@@ -283,7 +299,7 @@ title {
   font-family: $heading-martian-swd;
   background: none;
   border: solid 1px #86a0af;
-  color: var(--main-text-color);
+  color: var(--text-main);
   margin-top: 0;
   height: 32px;
   padding: 0 6px 0 6px;
@@ -295,7 +311,7 @@ title {
 .tag:hover {
   background-color: var(--tag-background);
   border: solid 1px var(--tag-background);
-  color: var(--main-text-color);
+  color: var(--text-main);
   padding: 0 6px 0 6px;
 }
 
@@ -307,8 +323,8 @@ title {
 // ----------------------------------------------
 
 footer {
-  border-top: 1px solid var(--light-text-color);
-  color: var(--light-text-color);
+  border-top: 1px solid var(--text-light);
+  color: var(--text-light);
   display: flex;
   flex-wrap: wrap;
   font-size: var(--small-font-size);
@@ -317,7 +333,7 @@ footer {
   padding: 1em 0 calc(3 * var(--line-height)) 0;
   width: 100%;
   a {
-    color: var(--light-text-color);
+    color: var(--text-light);
     margin-right: 5%;
     text-decoration: none;
   }
@@ -363,8 +379,8 @@ blockquote {
 
 a {
   font-family: $body-ibm;
-  color: var(--main-text-color);
-  text-decoration-color: var(--extra-light-text-color);
+  color: var(--text-main);
+  text-decoration-color: var(--text-extra-light);
 }
  
 pre {
@@ -382,7 +398,7 @@ code {
 }
 
 p code {
-  background-color: var(--box-background-color);
+  background-color: var(--box-background);
 }
 
 img {
@@ -393,14 +409,14 @@ img {
 }
 
 figcaption {
-  color: var(--light-text-color);
+  color: var(--text-light);
   margin-top: calc(.5 * var(--line-height));
   text-align: center;
 }
 
 aside, .callout {
-  background-color: var(--box-background-color);
-  border-left: 5px solid var(--light-border-color);
+  background-color: var(--box-background);
+  border-left: 5px solid var(--light-border);
   font-size: var(--small-font-size);
   margin: calc(1.25 *var(--line-height)) 0;
   padding: calc(.5 * var(--line-height));
@@ -430,17 +446,17 @@ aside, .callout {
 
 
 .tag-list {
-  background-color: var(--main-background-color);
+  background-color: var(--main-background);
   border: none;
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(.5 * var(--line-height));
   padding: 0;
   a, button {
-    background-color: var(--box-background-color);
-    border: 1px solid var(--light-border-color);
+    background-color: var(--box-background);
+    border: 1px solid var(--light-border);
     border-radius: 4px;
-    color: var(--main-text-color);
+    color: var(--text-main);
     flex-grow: .01;
     font-size: var(--small-font-size);//var(--body-font-size);
     font-variant-numeric: oldstyle-nums;
@@ -449,7 +465,7 @@ aside, .callout {
     text-decoration: none;
   }
   a:hover {
-    background-color: var(--main-background-color);
+    background-color: var(--main-background);
   }
 }
 
@@ -467,7 +483,7 @@ aside, .callout {
 
 .internal-link, .internal-link a {
   font-family: $body-martian-cn;
-  color: var(--light-text-color);
+  color: var(--text-light);
   font-size: var(--small-font-size);
   text-decoration: none;
 }
@@ -478,7 +494,7 @@ aside, .callout {
   padding: 1% 5% 5% 5%;
   width: clamp(100px, 200px, 50%);
   img {
-    border: 1px solid var(--main-background-color);
+    border: 1px solid var(--main-background);
     border-radius: 1%;
   }
 } 
@@ -515,10 +531,10 @@ aside, .callout {
 }
 
 .form-control {
-  background-color: var(--box-background-color);
-  border: 1px solid var(--light-border-color);
+  background-color: var(--box-background);
+  border: 1px solid var(--light-border);
   border-radius: 4px;
-  color: var(--main-text-color);
+  color: var(--text-main);
   height: calc( 1.5 * var(--line-height));
   flex: 5 1 auto;
   font-family: $body-ibm;
@@ -533,14 +549,14 @@ aside, .callout {
 }
 
 .form-control::placeholder {
-	color: var(--light-text-color);
+	color: var(--text-light);
 }
 
 .btn-default {
-  background-color: var(--box-background-color);
-  border: 1px solid var(--light-border-color);
+  background-color: var(--box-background);
+  border: 1px solid var(--light-border);
   border-radius: 4px;
-  color: var(--main-text-color);
+  color: var(--text-main);
   font-family: $body-ibm;
   font-size: var(--small-font-size);
   font-weight: normal;
@@ -549,8 +565,8 @@ aside, .callout {
 }
 
 .btn-default:hover {
-  background-color: var(--main-background-color);
-  color: var(--link-color);
+  background-color: var(--main-background);
+  color: var(--text-link);
   text-decoration: underline;
 }
 
@@ -564,17 +580,17 @@ aside, .callout {
 }
 
 .blog-listing-link {
-  color: var(--main-text-color);
+  color: var(--text-main);
   text-decoration: none;
   font-variant-numeric: normal;
 }
 
 .blog-listing-link + time {
-  color: var(--main-text-color);
+  color: var(--text-main);
 }
 
 .index-latest-posts span{
-  color: var(--main-text-color);
+  color: $ya-green-dark;
   background-color: #E2F700;
   margin-top: 15px;
   padding: 5px;
@@ -615,6 +631,7 @@ h2{
   pointer-events:none;
 }
 
+// implementations with divs
 .cards {
   @media (max-width: 920px) {
     width: 100%;
@@ -634,20 +651,19 @@ h2{
   flex-flow: row wrap;
   margin-top: 10px;
 
-  // text width 850
-
-  .card {
+  .card-article {
     @media (max-width: 920px) {
       position: sticky;
       width: 80%;
-      height: 200px;
-      background-color: $card-back-color;
+      height: calc(5 * var(--line-height)); // 200px;
+      background-color: transparent;
       overflow: clip;
       margin-right: 5%;
     }
-    position: sticky;
+    position: relative;
+    display: block;
     width: 49%;
-    height: calc(5 * var(--line-height));// 300px;
+    height:  calc(4 * var(--line-height));// 300px;
     border: solid 1px $card-border-color;
     margin-left: -1px;
     margin-bottom: 10px;
@@ -656,20 +672,22 @@ h2{
 
     .date {
       z-index: 98;
+      position: absolute;
+      top: -1px;
+      right: 0;
       border-color: $card-border-color;
       border-right: none;
-      background-color: #D2DCDC; // #1D2336;
+      background-color: var(--date-background); // #1D2336;
       padding-top: 3px;
       padding-bottom: 3px;
-      margin-top: -1px;
+      margin-top: 0;
       float: right;
     }
     time {
       z-index: 98;
-      position: sticky;
-      margin-top: 0;
-      margin-right: 5px;
-      color: var(--main-text-color);
+      position: relative;
+      margin: 3px;
+      color: var(--text-main);
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease;
     }
@@ -677,7 +695,7 @@ h2{
     .title-preview {
       z-index: 99;
       width: 100%;
-      color: var(--main-text-color);
+      color: var(--text-main);
       font-family: $heading-ibm;
       font-size: 20px;
       font-weight: bold;
@@ -685,6 +703,7 @@ h2{
       left: 5px;
       bottom: 5px;
       white-space: normal;
+      text-align: left;
     }
     .title-preview p {
       margin-top: 0;
@@ -735,24 +754,242 @@ h2{
         font-size: 3rem;
       }
     }
+  }
+  .card-article:hover {
+    background-color: $ya-yellow;
+    cursor: pointer;
+    transition: 0.4s;
+    .title-preview {
+      color: $ya-green-dark;
+    }
+  }
 
-    &:hover button {
-      transform: scale(10);
+  .card-notes {
+    @media (max-width: 920px) {
+      position: sticky;
+      width: 80%;
+      height: calc(5 * var(--line-height));
+      background-color: transparent;
+      overflow: clip;
+      margin-right: 5%;
+    }
+    position: relative;
+    display: block;
+    width: 49%;
+    height:  calc(4 * var(--line-height));// 300px;
+    border: solid 1px $card-border-color;
+    margin-left: -1px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: transparent;// #132230;
+
+    .date {
+      z-index: 98;
+      position: absolute;
+      top: -1px;
+      right: 0;
+      border-color: $card-border-color;
+      border-right: none;
+      background-color: var(--date-background); // #1D2336;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      margin-top: 0;
+      float: right;
+    }
+    time {
+      z-index: 98;
+      position: relative;
+      margin: 3px;
+      color: var(--text-main);
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
     }
 
-    .btn-article{
-      background-color: #1D2336;
+    .title-preview {
+      z-index: 99;
+      width: 100%;
+      color: var(--text-main);
+      font-family: $heading-ibm;
+      font-size: 20px;
+      font-weight: bold;
+      position: absolute;
+      left: 5px;
+      bottom: 5px;
+      text-align: left;
+    }
+    .title-preview p {
+      margin-top: 0;
+      margin-right: 5px;
     }
 
-    .btn-now{
-      background-color: $ya-orange;
+    // arrow (read more)
+    .fa-square-arrow-right {
+      z-index: 100;
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      font-size: 40px;
+      cursor: pointer;
+    }
+    &:hover i {
+      //opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
     }
 
-    .btn-notes{
-      background-color: $ya-yellow;
+    .img-preview {
+      //z-index: 100;
+      //width: 400px;
+      //height: 200px;
+      //background-image: url($img-url);
+      //background-size: 100% 100%;
+      //filter: grayscale(100%);
+    }
+    &:hover .img-preview {
+      filter: grayscale(0);
+    }
+
+    button{
+      z-index: 100;
+      position: absolute;
+      right: 90%;
+      bottom: 80%;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.5s ease;
+      mix-blend-mode: hard-light;
+      i {
+        font-size: 3rem;
+      }
+    }
+  }
+  .card-notes:hover {
+    background-color: $ya-blue;
+    cursor: pointer;
+    transition: 0.4s;
+    .title-preview {
+      color: $ya-grey-light;
+    }
+  }
+
+  .card-now {
+    @media (max-width: 920px) {
+      position: sticky;
+      width: 80%;
+      height: calc(5 * var(--line-height));
+      background-color: transparent;
+      overflow: clip;
+      margin-right: 5%;
+    }
+    position: relative;
+    display: block;
+    width: 49%;
+    height:  calc(4 * var(--line-height));// 300px;
+    border: solid 1px $card-border-color;
+    margin-left: -1px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: transparent;// #132230;
+
+    .date {
+      z-index: 98;
+      position: absolute;
+      top: -1px;
+      right: 0;
+      border-color: $card-border-color;
+      border-right: none;
+      background-color: var(--date-background); // #1D2336;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      margin-top: 0;
+      float: right;
+    }
+    time {
+      z-index: 98;
+      position: relative;
+      margin: 3px;
+      color: var(--text-main);
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+
+    .title-preview {
+      z-index: 99;
+      width: 100%;
+      color: var(--text-main);
+      font-family: $heading-ibm;
+      font-size: 20px;
+      font-weight: bold;
+      position: absolute;
+      left: 5px;
+      bottom: 5px;
+      text-align: left;
+    }
+    .title-preview p {
+      margin-top: 0;
+      margin-right: 5px;
+    }
+
+    // arrow (read more)
+    .fa-square-arrow-right {
+      z-index: 100;
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      font-size: 40px;
+      cursor: pointer;
+    }
+    &:hover i {
+      //opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+
+    .img-preview {
+      //z-index: 100;
+      //width: 400px;
+      //height: 200px;
+      //background-image: url($img-url);
+      //background-size: 100% 100%;
+      //filter: grayscale(100%);
+    }
+    &:hover .img-preview {
+      filter: grayscale(0);
+    }
+
+    button{
+      z-index: 100;
+      position: absolute;
+      right: 90%;
+      bottom: 80%;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.5s ease;
+      mix-blend-mode: hard-light;
+      i {
+        font-size: 3rem;
+      }
+    }
+  }
+  .card-now:hover {
+    background-color: $ya-orange;
+    cursor: pointer;
+    transition: 0.4s;
+    .title-preview {
+      color: $ya-green-dark;
     }
   }
 }
+
+
 //
 //    // grey circles
 //    //&:before {
@@ -838,7 +1075,7 @@ h2{
 
 // ------------------------------------------------------------------------------------
 .input-label {
-  color: var(--main-text-color);
+  color: var(--text-main);
   font-weight: bold;
   font-size: var(--body-font-size);
   margin-bottom: 0;
@@ -857,7 +1094,7 @@ h2{
 
 
 .note-entry {
-  border-top: 1px solid var(--light-border-color);
+  border-top: 1px solid var(--light-border);
   margin: 0;
   padding: calc(1.25 * var(--line-height)) 0;
   h1 {
@@ -877,10 +1114,10 @@ h2{
 
 .note-date-line {
   font-family: $body-ibm;
-  color: var(--light-text-color);
+  color: var(--text-light);
   font-size: var(--small-text-size);
   a {
-    color: var(--light-text-color);
+    color: var(--text-light);
     text-decoration: none;
   }
 }
@@ -892,7 +1129,7 @@ mark {
 // link hover styles at the end so they apply to all links
 
 a:hover {
-  color: var(--light-text-color);
+  color: var(--text-light);
   text-decoration: underline solid;
   text-decoration-color: currentColor;
 }

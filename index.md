@@ -5,8 +5,6 @@ layout: index
 index: true
 ---
 
-{% include about-picture-img.html %}
-
 Hi there! Recently, I have decided to enhance my old online resume. So, I have found an example and set up my own blogging website.
 
 Every day, I am work in progress and studying Data Science & Business Analytics.
