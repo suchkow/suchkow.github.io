@@ -154,7 +154,7 @@ p, li, details, summary {
 
 nav {
   font-family: $body-martian-cn;
-  color: #D2DCDC;
+  color: white;
   font-size: var(--small-font-size);
   margin: 0;
   a {
@@ -176,7 +176,6 @@ header {
   max-width: $text-width;
   width: 100%;
   h1 {
-    // border-bottom: 1px solid var(--light-text-color);
     font-size: var(--h1-font-size);
     font-variant-numeric: normal;
     line-height: 2;
@@ -186,9 +185,8 @@ header {
   nav span a{
     font-family: $heading-ibm;
     font-size: var(--small-font-size);
-    font-weight: bold;
-    background: $ya-blue;
-    color: $ya-grey-light;
+    color: var(--text-main);
+    border: solid 1px $ya-grey;
     height: 30px;
     padding: 5px 10px;
     position: static;
@@ -198,9 +196,10 @@ header {
   nav span a:hover{
     font-family: $heading-ibm;
     font-size: var(--small-font-size);
-    font-weight: bold;
-    background: $ya-blue;
-    color: $ya-grey-light;
+    //font-weight: bold;
+    background: $ya-grey-light;
+    color: $ya-green-dark;
+    border: solid 1px transparent;
     text-decoration: none;
     height: 30px;
     padding: 5px 10px;
@@ -868,12 +867,9 @@ h2{
     }
   }
   .card-notes:hover {
-    background-color: $ya-blue;
+    background-color: rgba(255, 146, 183, 0.7);
     cursor: pointer;
     transition: 0.4s;
-    .title-preview {
-      color: $ya-grey-light;
-    }
   }
 
   .card-now {
