@@ -16,10 +16,10 @@ date: 2023-04-27
 syntax: true
 ---
 
-
 ## Introduction
 
 CSV (Comma Separated Values) files are a popular way of storing data in tabular form. They are widely used in various fields such as finance, healthcare, education, etc. However, sometimes these files may contain unwanted or incorrect data that needs to be cleared. In this blog post, we will discuss different methods of clearing data in CSV files using Python.
+
 
 ## Method 1: Deleting Rows with Specific Values
 
@@ -39,6 +39,7 @@ with open('employee_data_cleaned.csv', 'w', newline='') as file:
 
 This code reads the data from the input CSV file, filters the rows that meet the condition (salary >= $50,000), and writes the filtered data to a new CSV file.
 
+
 ## Method 2: Removing Duplicate Rows
 
 Another common issue with CSV files is duplicate rows. These rows can occur due to various reasons such as incorrect data entry or system errors. To remove duplicate rows from a CSV file, we can use the Pandas library in Python. The following code demonstrates how to remove duplicate rows from a CSV file using Pandas:
@@ -52,6 +53,7 @@ df.to_csv('employee_data_cleaned.csv', index=False)
 ```
 
 This code reads the data from the input CSV file into a Pandas DataFrame, removes the duplicate rows, and writes the cleaned data to a new CSV file.
+
 
 ## Method 3: Replacing Incorrect Data
 
@@ -70,6 +72,7 @@ with open('student_data_cleaned.csv', 'w', newline='') as file:
 ```
 
 This code reads the data from the input CSV file, replaces the incorrect data (jon with john), and writes the cleaned data to a new CSV file.
+
 
 ## Conclusion
 
