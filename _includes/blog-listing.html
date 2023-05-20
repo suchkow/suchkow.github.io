@@ -1,43 +1,44 @@
 {% comment %}
-This section adds pretty ordinal endings (i.e. st, nd, th) to dates in the blog post listing.
+This section adds pretty ordinal endings (i.e. st, nd, th) to dates in
+the blog post listing.
 {% endcomment %}
 
 
 {%- assign dateOfPost = {{post.date | date: "%d"}} -%}
 
 {%- if dateOfPost == "01" or dateOfPost == "21" or dateOfPost == "31" -%}
-	{%- assign ordinalEnding = "st" -%}
+{%- assign ordinalEnding = "st" -%}
 {%- elsif dateOfPost == "02" or dateOfPost == "22" -%}
-	{%- assign ordinalEnding = "nd" -%}
+{%- assign ordinalEnding = "nd" -%}
 {%- elsif dateOfPost == "03" or dateOfPost == "23" -%}
-	{%- assign ordinalEnding = "rd" -%}
+{%- assign ordinalEnding = "rd" -%}
 {%- else %}
-	{%- assign ordinalEnding = "th" -%}
+{%- assign ordinalEnding = "th" -%}
 {%- endif %}
 
 
 {%- assign firstDigitDofP = dateOfPost | slice: 0 -%}
 
 {%- if firstDigitDofP == "0" -%}
-	{%- assign prettyDateOfPost = dateOfPost | slice: 1 -%}
+{%- assign prettyDateOfPost = dateOfPost | slice: 1 -%}
 {%- else -%}
-	{%- assign prettyDateOfPost = dateOfPost -%}
+{%- assign prettyDateOfPost = dateOfPost -%}
 {%- endif -%}
 
 
 {% comment %}
-The conditional makes the first now post link to /now instead of the post permalink.  
+The conditional makes the first now post link to /now instead of the post permalink.
 {% endcomment %}
 
 
 {%- if post.category == "now" and site.categories.now[0] == post -%}
-	{% assign LinkToPost = "/now" %}
+{% assign LinkToPost = "/now" %}
 {% else %}
-	{% assign LinkToPost = post.url %}
+{% assign LinkToPost = post.url %}
 {% endif %}
 
-{%- if post.category == "articles" -%}
-<button class="card-article" title="" onclick="openLink()">
+<div class="blog-cards">
+<button class="card" title="{{post.title}}" onclick="openLink()">
 	<span class="date">
 		<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ post.date | date: "%Y" }}</time>
 	</span>
@@ -45,44 +46,19 @@ The conditional makes the first now post link to /now instead of the post permal
 	<div class="title-preview">
 		<p class="overflow-string">{{ post.title }}</p>
 	</div>
-
-	<i class="fa-sharp fa-solid fa-square-arrow-right"></i>
 </button>
-{%- endif -%}
-
-{%- if post.category == "notes" -%}
-<button class="card-notes" title="" onclick="openLink()">
-	<span class="date">
-		<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ post.date | date: "%Y" }}</time>
-	</span>
-
-	<div class="title-preview">
-		<p class="overflow-string">{{ post.title }}</p>
-	</div>
-
-	<i class="fa-sharp fa-solid fa-square-arrow-right"></i>
-</button>
-{%- endif -%}
-
-
-{%- if LinkToPost == "/now" -%}
-<button class="card-notes" title="" onclick="openLink()">
-	<span class="date">
-		<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ post.date | date: "%Y" }}</time>
-	</span>
-
-	<div class="title-preview">
-		<p class="overflow-string">{{ post.title }}</p>
-	</div>
-
-	<i class="fa-sharp fa-solid fa-square-arrow-right"></i>
-</button>
-{%- endif -%}
-
-<!--<div class="img-preview"></div>-->
+</div>
 
 <script>
 	function openLink() {
 		window.open("{{ post.permalink }}");
 	}
 </script>
+
+<!--
+<p>
+	<a href="{{LinkToPost}}" title="{{post.title}}" class="blog-listing-link">{{ post.title }}</a>
+	<br>
+	<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ post.date | date: "%Y" }}</time>
+</p>
+-->
