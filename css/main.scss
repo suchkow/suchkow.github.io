@@ -381,6 +381,65 @@ a {
   color: var(--text-main);
   text-decoration-color: var(--text-extra-light);
 }
+a:hover {
+  color: var(--text-light);
+  text-decoration: underline solid;
+  text-decoration-color: currentColor;
+}
+
+div{
+  a{
+    font-family: $heading-ibm;
+    font-size: var(--small-font-size);
+    color: var(--text-main);
+    border: solid 1px $ya-grey;
+    height: 30px;
+    padding: 5px 10px;
+    position: static;
+    text-align: center;
+    transition: 0.4s;
+  }
+  a:hover{
+    font-family: $heading-ibm;
+    font-size: var(--small-font-size);
+    //font-weight: bold;
+    background: $ya-grey-light;
+    color: $ya-green-dark;
+    border: solid 1px transparent;
+    text-decoration: none;
+    height: 30px;
+    padding: 5px 10px;
+    position: static;
+    text-align: center;
+    transition: 0.4s;
+  }
+}
+
+.custom-nav{
+  font-family: $heading-ibm;
+  font-size: var(--small-font-size);
+  color: var(--text-main);
+  border: solid 1px $ya-grey;
+  height: 30px;
+  padding: 5px 10px;
+  position: static;
+  text-align: center;
+  transition: 0.4s;
+}
+.custom-nav:hover{
+  font-family: $heading-ibm;
+  font-size: var(--small-font-size);
+  //font-weight: bold;
+  background: $ya-grey-light;
+  color: $ya-green-dark;
+  border: solid 1px transparent;
+  text-decoration: none;
+  height: 30px;
+  padding: 5px 10px;
+  position: static;
+  text-align: center;
+  transition: 0.4s;
+}
  
 pre {
   font-family: $mono-typeface;
@@ -1123,9 +1182,3 @@ mark {
 }
 
 // link hover styles at the end so they apply to all links
-
-a:hover {
-  color: var(--text-light);
-  text-decoration: underline solid;
-  text-decoration-color: currentColor;
-}

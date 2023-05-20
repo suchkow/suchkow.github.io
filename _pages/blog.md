@@ -5,16 +5,13 @@ og-type: website
 permalink: /blog
 nav: custom
 custom-nav: 
-    - '<a style="cursor: pointer;" onclick="toggleSearchBar()" title="Search" >Search</a>&nbsp;|&nbsp;'
-    - '<a href="/blog/topics" title="Topics of articles">Topics</a>&nbsp;|&nbsp;'
-    - '<a href="/notes" title="Last 15 notes">Notes</a>&nbsp;|&nbsp;'
-    - '<a href="/404" title="Random">Random</a>'
+    - '<a class="custom-nav" style="cursor: pointer;" onclick="toggleSearchBar()" title="Search" >Search</a>&nbsp;|&nbsp;'
+    - '<a class="custom-nav" href="/blog/topics" title="Topics of articles">Topics</a>&nbsp;|&nbsp;'
+    - '<a class="custom-nav" href="/notes" title="Last 15 notes">Notes</a>&nbsp;|&nbsp;'
+    - '<a class="custom-nav" href="/404" title="Random">Random</a>'
 ---
 
-<div id="search-bar" style="display: none;">
-
-{%- include search.html -%}
-</div>
+<div id="search-bar" style="display: none;">{%- include search.html -%}</div>
 
 {% for post in site.categories.articles %}
     {%- unless post.categories contains "rss-club" or post.categories contains "now"-%}
