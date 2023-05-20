@@ -24,6 +24,5 @@ Phone and WhatsApp: [+7 917 930 1551](tel:+79179301551)<br/>
 <script>
 function copyEmailtoClipboard() {
     navigator.clipboard.writeText((arguments[0]));
-
 }
 </script>

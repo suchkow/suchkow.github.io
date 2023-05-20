@@ -8,7 +8,6 @@ custom-nav:
     - '<a class="custom-nav" style="cursor: pointer;" onclick="toggleSearchBar()" title="Search" >Search</a>&nbsp;|&nbsp;'
     - '<a class="custom-nav" href="/blog/topics" title="Topics of articles">Topics</a>&nbsp;|&nbsp;'
     - '<a class="custom-nav" href="/notes" title="Last 15 notes">Notes</a>&nbsp;|&nbsp;'
-    - '<a class="custom-nav" href="/404" title="Random">Random</a>'
 ---
 
 <div id="search-bar" style="display: none;">{%- include search.html -%}</div>
