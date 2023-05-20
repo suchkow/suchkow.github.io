@@ -712,7 +712,7 @@ h2{
   .card-article {
     @media (max-width: 920px) {
       position: sticky;
-      width: 80%;
+      width: 90%;
       height: calc(5 * var(--line-height)); // 200px;
       background-color: transparent;
       overflow: clip;
@@ -720,7 +720,7 @@ h2{
     }
     position: relative;
     display: block;
-    width: 49%;
+    width: 90%;
     height:  calc(4 * var(--line-height));// 300px;
     border: solid 1px $card-border-color;
     margin-left: -1px;
@@ -825,7 +825,7 @@ h2{
   .card-notes {
     @media (max-width: 920px) {
       position: sticky;
-      width: 80%;
+      width: 90%;
       height: calc(5 * var(--line-height));
       background-color: transparent;
       overflow: clip;
@@ -942,7 +942,7 @@ h2{
     }
     position: relative;
     display: block;
-    width: 49%;
+    width: 90%;
     height:  calc(4 * var(--line-height));// 300px;
     border: solid 1px $card-border-color;
     margin-left: -1px;
@@ -1143,14 +1143,14 @@ h2{
   display: flex;
   position: sticky;
   justify-content: flex-start;
-  align-items: start;
+  align-items: center;
   flex-flow: row wrap;
   margin-top: 10px;
 
   .card {
     @media (max-width: 920px) {
       position: sticky;
-      width: 100%;
+      width: 90%;
       height: calc(5 * var(--line-height)); // 200px;
       background-color: transparent;
       overflow: clip;
