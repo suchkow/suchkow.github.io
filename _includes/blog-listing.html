@@ -38,7 +38,7 @@ The conditional makes the first now post link to /now instead of the post permal
 {% endif %}
 
 <div class="blog-cards">
-<button class="card" title="{{post.title}}" onclick="openLink()">
+<button class="card" title="{{post.title}}" onclick="open_link()">
 	<span class="date">
 		<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ post.date | date: "%Y" }}</time>
 	</span>
@@ -50,15 +50,14 @@ The conditional makes the first now post link to /now instead of the post permal
 </div>
 
 <script>
-	function openLink() {
-		window.open("{{ post.permalink }}");
+	function open_link() {
+		window.open("{{ LinkToPost }}", "_self");
 	}
 </script>
 
-<!--
-<p>
-	<a href="{{LinkToPost}}" title="{{post.title}}" class="blog-listing-link">{{ post.title }}</a>
-	<br>
-	<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ post.date | date: "%Y" }}</time>
-</p>
--->
+
+<!--<p>-->
+<!--	<a href="{{LinkToPost}}" title="{{post.title}}" class="blog-listing-link">{{ post.title }}</a>-->
+<!--	<br>-->
+<!--	<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ post.date | date: "%Y" }}</time>-->
+<!--</p>-->
