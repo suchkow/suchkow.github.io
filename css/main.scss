@@ -381,6 +381,65 @@ a {
   color: var(--text-main);
   text-decoration-color: var(--text-extra-light);
 }
+a:hover {
+  color: var(--text-light);
+  text-decoration: underline solid;
+  text-decoration-color: currentColor;
+}
+
+div{
+  a{
+    font-family: $heading-ibm;
+    font-size: var(--small-font-size);
+    color: var(--text-main);
+    border: solid 1px $ya-grey;
+    height: 30px;
+    padding: 5px 10px;
+    position: static;
+    text-align: center;
+    transition: 0.4s;
+  }
+  a:hover{
+    font-family: $heading-ibm;
+    font-size: var(--small-font-size);
+    //font-weight: bold;
+    background: $ya-grey-light;
+    color: $ya-green-dark;
+    border: solid 1px transparent;
+    text-decoration: none;
+    height: 30px;
+    padding: 5px 10px;
+    position: static;
+    text-align: center;
+    transition: 0.4s;
+  }
+}
+
+.custom-nav{
+  font-family: $heading-ibm;
+  font-size: var(--small-font-size);
+  color: var(--text-main);
+  border: solid 1px $ya-grey;
+  height: 30px;
+  padding: 5px 10px;
+  position: static;
+  text-align: center;
+  transition: 0.4s;
+}
+.custom-nav:hover{
+  font-family: $heading-ibm;
+  font-size: var(--small-font-size);
+  //font-weight: bold;
+  background: $ya-grey-light;
+  color: $ya-green-dark;
+  border: solid 1px transparent;
+  text-decoration: none;
+  height: 30px;
+  padding: 5px 10px;
+  position: static;
+  text-align: center;
+  transition: 0.4s;
+}
  
 pre {
   font-family: $mono-typeface;
@@ -653,7 +712,7 @@ h2{
   .card-article {
     @media (max-width: 920px) {
       position: sticky;
-      width: 80%;
+      width: 90%;
       height: calc(5 * var(--line-height)); // 200px;
       background-color: transparent;
       overflow: clip;
@@ -661,7 +720,7 @@ h2{
     }
     position: relative;
     display: block;
-    width: 49%;
+    width: 90%;
     height:  calc(4 * var(--line-height));// 300px;
     border: solid 1px $card-border-color;
     margin-left: -1px;
@@ -766,7 +825,7 @@ h2{
   .card-notes {
     @media (max-width: 920px) {
       position: sticky;
-      width: 80%;
+      width: 90%;
       height: calc(5 * var(--line-height));
       background-color: transparent;
       overflow: clip;
@@ -883,7 +942,7 @@ h2{
     }
     position: relative;
     display: block;
-    width: 49%;
+    width: 90%;
     height:  calc(4 * var(--line-height));// 300px;
     border: solid 1px $card-border-color;
     margin-left: -1px;
@@ -1069,6 +1128,139 @@ h2{
 //  }
 //}
 
+.blog-cards {
+  @media (max-width: 920px) {
+    width: 100%;
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    align-items: start;
+    //flex-direction: column;
+    flex-flow: row wrap;
+  }
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  position: sticky;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-top: 10px;
+
+  .card {
+    @media (max-width: 920px) {
+      position: sticky;
+      width: 90%;
+      height: calc(5 * var(--line-height)); // 200px;
+      background-color: transparent;
+      overflow: clip;
+      margin-right: 5%;
+    }
+    position: relative;
+    display: block;
+    width: 70%;
+    height:  calc(4 * var(--line-height));// 300px;
+    border: solid 1px $card-border-color;
+    margin-left: -1px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: transparent;// #132230;
+
+    .date {
+      z-index: 98;
+      position: absolute;
+      top: -1px;
+      right: 0;
+      border-color: $card-border-color;
+      border-right: none;
+      background-color: var(--date-background); // #1D2336;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      margin-top: 0;
+      float: right;
+    }
+    time {
+      z-index: 98;
+      position: relative;
+      margin: 3px;
+      color: var(--text-main);
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+
+    .title-preview {
+      z-index: 99;
+      width: 100%;
+      color: var(--text-main);
+      font-family: $heading-ibm;
+      font-size: 20px;
+      font-weight: bold;
+      position: absolute;
+      left: 5px;
+      bottom: 5px;
+      white-space: normal;
+      text-align: left;
+    }
+    .title-preview p {
+      margin-top: 0;
+      margin-right: 5px;
+    }
+
+    // arrow (read more)
+    .fa-square-arrow-right {
+      z-index: 100;
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      font-size: 40px;
+      cursor: pointer;
+    }
+    &:hover i {
+      //opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+
+    .img-preview {
+      //z-index: 100;
+      //width: 400px;
+      //height: 200px;
+      //background-image: url($img-url);
+      //background-size: 100% 100%;
+      //filter: grayscale(100%);
+    }
+    &:hover .img-preview {
+      filter: grayscale(0);
+    }
+
+    button{
+      z-index: 100;
+      position: absolute;
+      right: 90%;
+      bottom: 80%;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.5s ease;
+      mix-blend-mode: hard-light;
+      i {
+        font-size: 3rem;
+      }
+    }
+  }
+  .card:hover {
+    background-color: $ya-yellow;
+    cursor: pointer;
+    transition: 0.4s;
+    .title-preview {
+      color: $ya-green-dark;
+    }
+  }
+}
+
 // ------------------------------------------------------------------------------------
 .input-label {
   color: var(--text-main);
@@ -1123,9 +1315,3 @@ mark {
 }
 
 // link hover styles at the end so they apply to all links
-
-a:hover {
-  color: var(--text-light);
-  text-decoration: underline solid;
-  text-decoration-color: currentColor;
-}

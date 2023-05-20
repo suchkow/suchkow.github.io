@@ -13,7 +13,7 @@
 	<span>
 		<a class="navigation" href="/blog" title="Check out latest articles">Blog</a>
 		<a href="/about" title="Get more acquainted">About</a>
-		<a href="/contact" title="Ways to reach Ilya">Contacts</a>
+		<a href="/about/contacts" title="Ways to reach Ilya">Contacts</a>
 	</span>
 	</nav>
 </header>
@@ -29,7 +29,7 @@
 {%- for post in site.posts -%}
 	{%- unless post.categories contains "rss-club" or post.categories contains "unlisted"-%}
 		{%- assign i = i | plus: 1 -%}
-		{%- include blog-listing.html -%}
+		{%- include index-listing.html -%}
 	{% endunless %}
 
 	{%- if i == 6 -%}

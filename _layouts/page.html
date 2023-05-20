@@ -7,15 +7,13 @@
 {%- unless page.og-type == "website" -%}<article>{%- endunless -%}
 
 <header>
-	<!-- <title>{{ page.title }} | IStorage</title> -->
 	<div class="logo">
 		<img src="static/logos/logo.svg" role="img" width="50" height="50"/>
 		<h1 class="index-title">&nbsp;{{ page.title }}</h1>
 	</div>
+
 	{%- unless page.nav == false -%}
-	<nav>
-		{%- include page-nav.html -%}
-	</nav>
+		<nav>{%- include page-nav.html -%}</nav>
 	{%- endunless -%}
 </header>
 

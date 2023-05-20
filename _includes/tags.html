@@ -1,7 +1,9 @@
-{% if forloop.last != true %}<button class="tag" title="All articles on {{ tag }}" onclick="openLink()">{{ tag }}</button>{% endif %}
+{% if forloop.last != true %}
+    <button class="tag" title="All articles on {{ tag }}" onclick="openLink()">{{ tag }}</button>
+{% endif %}
 
 <script>
     function openLink() {
-        window.open("/blog/topics#{{ tag }}");
+        window.open("/blog/topics#{{ tag }}", "_self");
     }
 </script>
