@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "_posts/articles/2023-04-27-methods-of-clearing-data.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -133,6 +133,10 @@
   },
   "active": "2d2924cd63961e56",
   "lastOpenFiles": [
+    "_posts/articles/2023-05-20-adding-post-from-obsidian.md",
+    "_posts/articles/2023-04-25-testing-post.md",
+    "_posts/articles/2023-04-27-methods-of-clearing-data.md",
+    "_includes/index-listing.html",
     "static/social-media-images/do.jpg",
     "static/fonts/MartianGrotesk-sWdBd.woff2",
     "static/post-content/2022-09-17/no-dogs.jpeg",
@@ -141,7 +145,6 @@
     "static/fonts/IBMPlexSans-Italic.woff2",
     "static/fonts/IBMPlexSans-Bold.woff2",
     "static/about-pictures/telegram.png",
-    "_posts/articles/2023-04-27-methods-of-clearing-data.md",
     "_config.yml",
     "_includes/tags.html",
     "_includes/rss-plug.html",
@@ -149,7 +152,6 @@
     "_pages/rss.md",
     "_posts/notes/2022-11-17-note-1.md",
     "_includes/now-listing.html",
-    "_layouts/post.html",
     "_pages/topics.md",
     "_pages/contact.md",
     "_no-index/rss-club.md",
@@ -174,8 +176,6 @@
     "static/logos/logo.svg",
     "static/logos/logo-stroked.svg",
     "_posts/now/2021-12-27-now-20211227.md",
-    "_pages/about.md",
-    "_posts/articles/2023-04-25-testing-post.md",
-    "_authors/ilya_suchkov.md"
+    "_pages/about.md"
   ]
 }
