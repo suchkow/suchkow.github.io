@@ -1,3 +1,8 @@
 {
-  "obsidian-prism-theme@@dark-accent-color-preset": "pt-accent-color-blue-dt"
+  "obsidian-prism-theme@@dark-accent-color-preset": "pt-accent-color-blue-dt",
+  "obsidian-prism-theme@@pt-font-slashed-zero": true,
+  "obsidian-prism-theme@@pt-font-alt-g": false,
+  "obsidian-prism-theme@@pt-font-alt-a": false,
+  "obsidian-prism-theme@@accent-style-dt": "pt-accent-style-filled-dt",
+  "obsidian-prism-theme@@accent-style-lt": "pt-accent-style-filled-lt"
 }
