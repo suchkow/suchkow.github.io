@@ -2,11 +2,11 @@
 title: Statistical Thinking in Python
 layout: post
 ---
-#### Graphical EDA
+## Graphical EDA
 
 - EDA – Exploratory Data Analysis
 
-> Python Libraries in Use
+> [! info] Python Libraries in Use
 > matplotlib.pyplot as plt
 > seaborn as sns
 > numpy as np
@@ -17,7 +17,7 @@ layout: post
 - Box Plot
 - Scatter Plot
 
-###### Bee-Swarm Plot
+#### Bee-Swarm Plot
 ```python
 # Create bee swarm plot with Seaborn's default settings
 _ = sns.swarmplot(x='species', y='petal length (cm)', data=df)
@@ -204,7 +204,7 @@ for i in range(1000):
 
 # Plot the histogram with default number of bins; label your axes
 _ = plt.hist(n_defaults, bins=50, density=True)
-_ = plt.xlabel('number of defaults out of 100 loans')
+_ = plt.xlabel('number of defaults out of 100 loans')
 _ = plt.ylabel('probability')
 plt.show()
 ```
