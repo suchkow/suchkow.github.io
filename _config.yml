@@ -1,6 +1,6 @@
 title: "🌀istorage"
 author: "Ilya Suchkov"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+description: ""
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -15,13 +15,16 @@ minimal: false             # use a dark header
 # Menu
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html"}
-  - {file: "README.md"}
-  - {file: "cv.md"}
+  - {file: "about.md"}
+  - {file: "storage.md"}
+  - {file: "archive.html"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:suchkow@internet.ru"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: suchkow@proton.me, url: "mailto:suchkow@proton.me"}
+  - {title: github.com/suchkow, url: "https://github.com/suchkow/"}
+  - {title: RSS, url: "/feed.xml"}
+  # - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  # - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
