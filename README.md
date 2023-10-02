@@ -1,99 +1,61 @@
----
-title: "About"
-permalink: "/about/"
-layout: page
----
+# Klisé
 
-## Installation
-
-Just fork this [repository](https://github.com/niklasbuschmann/contrast) and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
+Klisé is minimalist Jekyll theme for running a personal site and blog running on Jekyll.<br>
+For demo <a href="https://klise.now.sh" target="_blank" rel="noopener">klise.now.sh</a>
 
 ## Features
 
- - supports dark mode on macOS Mojave
- - optional sidebar
- - MathJax support
- - no external ressources
- - included archive page
- - supports pagination
- - feed generation
- - responsive
- - syntax highlighting
- - supports comments via [disqus](https://disqus.com/) or [isso](http://posativ.org/isso/)
+- [x] Light & Dark Mode support :waxing_crescent_moon:
+- [x] Customizable (using `.scss`)
+- [x] Responsive (desktop, tab and mobile)
+- [x] Mobile First Design
+- [x] SEO Optimized
+- [x] Images of post Organized ([`jekyll-postfiles`](https://github.com/nhoizey/jekyll-postfiles))
+- [x] Generate Sitemap ([`jekyll-sitemap`](https://github.com/jekyll/jekyll-sitemap))
+- [x] RSS Feed ([`jekyll-feed`](https://github.com/jekyll/jekyll-feed))
+- [x] Syntax Highlighter ([`rouge`](https://github.com/rouge-ruby/rouge))
+- [x] Next & Previous Post
+- [x] Comment layout, enable in frontmatter if you wish
+- [x] Google analytics
+- [x] HTML Minify ([`jekyll-compress-html`](https://github.com/penibelst/jekyll-compress-html))
+- [x] W3C **Validated**
+- [x] Lighthouse and PageSpeed **Passed**
 
-## Based on
+![Lighthouse Result](./lighthouse.png)
 
-- [Hyde](https://github.com/poole/hyde)
-- [Minima](https://github.com/jekyll/minima)
-- [Lagrange](https://github.com/LeNPaul/Lagrange)
-- [Font Awesome](http://fontawesome.io/)
-- [KaTeX](https://katex.org/)
-- [Pygments](https://github.com/richleland/pygments-css)
+## Backlogs
 
-## Installation (jekyll-remote-theme method)
+- [ ] Intergrated with PhotoSwipe.
+- [ ] Add schema.org meta information.
+- [ ] Transform class selector to BEM metodology.
 
-You can use this theme with the `jekyll-remote-theme` plugin. Just create an empty repo, copy over the `index.html` file and add this to your `_config.yml`:
+## Installation
 
-```yaml
-remote_theme: niklasbuschmann/contrast@v2.11
+Run local server:
 
-plugins:
-  - jekyll-remote-theme
+```bash
+$ git clone https://github.com/piharpi/jekyll-klise.git
+$ cd jekyll-klise
+$ bundle install
+$ bundle exec jekyll serve
 ```
 
-Note: to enable icons you also need to copy over the `_data` folder.
+Navigate to `localhost:4000`. You're Welcome, Fork and be Stargazer.
 
-## Config
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/piharpi/jekyll-klise) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/piharpi/jekyll-klise) [![Deploy to Azure button](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/?feature.customportal=false&WT.mc_id=javascript-0000-jopapa#create/Microsoft.StaticApp)
 
-Your `_config.yml` could for example look like this:
+## Limitation
 
-```yaml
-title: "Blog Title"
-author: "Blog Author"
-description: "My personal blog about ... something"
-permalink: /:title/
-lang: "en"
-excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
+- Since [`jekyll-postfiles`](https://github.com/nhoizey/jekyll-postfiles#compatibility) plugin isn't supported by github pages, this cause will make your site problems, path broken or post images won't show up, you can host alternatively using likes [netlify.com](https://netlify.com), [vercel.com](https://vercel.com), [azure.com](https://docs.microsoft.com/azure/static-web-apps/publish-jekyll) or [surge.sh](https://surge.sh) services, which support 3rd party.
 
-# Layout
+## Contributing
 
-show_excerpts: true        # show article excerpts on the home page
-show_frame: true           # adds a gray frame to the site
-show_sidebar: false        # show a sidebar instead of the usual header
+If you see any typos or formatting errors in a post, or want to helping reduce backlogs or any other issue that needs to be addressed, please do not hesitate to open a pull request and fix it!, please read [contributing](./CONTRIBUTING.md) before PR.
 
-# Menu
+Yeaaa feel free to open a pull request.
+## Support
 
-navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
-
-external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
-
-comments:
-#  disqus_shortname: ""    # see https://disqus.com/
-#  isso_domain: ""         # see https://posativ.org/isso/
-
-plugins:
- - jekyll-feed
-
-```
-
-## MathJax
-
-Contrast comes preinstalled with a leightweight alternative to MathJax called [KaTeX](https://katex.org/). To display equations in a post simply set `mathjax: true` in the article's front matter.
-
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W7MJ4X) [![saweria.co](./assets/img/saweria-button.png)](https://saweria.co/piharpi)
 ## License
 
-[public domain](http://unlicense.org/)
-
-## Screenshots
-
-![screenshot](https://user-images.githubusercontent.com/4943215/109431850-cd711780-7a08-11eb-8601-2763f2ee6bb4.png)
-
-![screenshot](https://user-images.githubusercontent.com/4943215/109431832-b6cac080-7a08-11eb-9c5e-a058680c23a1.png)
-
-![screenshot](https://user-images.githubusercontent.com/4943215/73125194-5f0b8b80-3fa4-11ea-805c-8387187503ad.png)
+This project is open source and available under the [MIT License](LICENSE).
