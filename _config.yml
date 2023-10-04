@@ -23,50 +23,50 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://suchkow.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 #######################################################################
-# Settings related to the Header and your About page go here,such as 
-# your name, site name, profile pic, site tagline, your bio, 
+# Settings related to the Header and your About page go here,such as
+# your name, site name, profile pic, site tagline, your bio,
 # your social media links etc
 #######################################################################
 
 heading: istorage
-subheading: # subheading won't work without a tagline, 
-          # tagline is mandatory if you want the 
-          # suheading to appear. The reason is
-          # having a heading and a subheading looks 
-          # ridiculous.
-  enabled: false
-  name: null
-tagline: # subheading won't work without a tagline, 
-         # tagline is mandatory if you want the 
-         # suheading to appear. The reason is
-         # having a heading and a subheading looks 
-         # ridiculous.
-         # Although you can have the tagline without 
-         # the subheading to support the main heading
-         # which in this case is 'Knowledge Continuum'
+subheading: # subheading won't work without a tagline,
+  # tagline is mandatory if you want the
+  # suheading to appear. The reason is
+  # having a heading and a subheading looks
+  # ridiculous.
   enabled: true
-  name: web and infinite data storage
-copyright: 
-  year: 2020
-  msg: # ilya suchkov # This is a mandatory attribute for copyright to be displayed
+  name: web storage
+tagline: # subheading won't work without a tagline,
+  # tagline is mandatory if you want the
+  # suheading to appear. The reason is
+  # having a heading and a subheading looks
+  # ridiculous.
+  # Although you can have the tagline without
+  # the subheading to support the main heading
+  # which in this case is 'Knowledge Continuum'
+  enabled: false
+  name:
+copyright:
+  year: 2023
+  msg: is # This is a mandatory attribute for copyright to be displayed
 
 user:
   display: false # setting it to false will remove the header image and bio
-                # Note that user settings come wholesale, it does not have the 
-                # granular enabling or disabling as with the 'preferences'
-                # or the site-wide settings.
-  name: Ilya Suchkov
-  bio: Entrepreneur / Analyst / Data-Scientist
-  email: suchkow@proton.me
+    # Note that user settings come wholesale, it does not have the
+    # granular enabling or disabling as with the 'preferences'
+  # or the site-wide settings.
+  name: null
+  bio: null
+  email: null
   photo: /assets/img/profile.png
   alt_link: null
   social: # just leave the field blank or type in null, if you don't have a
-          # particular social media account and it won't appear
+    # particular social media account and it won't appear
     enabled: false  # turn this to true
     twitter: null
-    github: suchkow
+    github: null
     youtube: null
-    linkedin: suchkow
+    linkedin: null
     twitch: null
     facebook: null
     instagram: null
@@ -75,18 +75,18 @@ user:
 
 #####################################################################
 # Settings related to your preferences go here, such as the
-# search results, wiki-style-links, sidenotes, marginnotes, 
-# transclusion, pagepreview, backlinks, related posts, highlighting, 
+# search results, wiki-style-links, sidenotes, marginnotes,
+# transclusion, pagepreview, backlinks, related posts, highlighting,
 # context menu, flashcards, sliding window, wrapping
 #####################################################################
 preferences:
   search:
     enabled: true
-    shortcut_hint: 
-        enabled: true
+    shortcut_hint:
+      enabled: true
   wiki_style_link: # This property handles wiki style links '[['
     enabled: true
-  sidenotes: 
+  sidenotes:
     enabled: true
   transclusion:
     enabled: true
@@ -96,9 +96,9 @@ preferences:
     enabled: true
   highlighting:
     enabled: true
-    color: DAEDFF # Takes hexadecimal and basic names like white, red, etc. 
-                  # Do not add '#'(the pound symbol) before the hexadecimal number.
-                  # In yml, it is considered as a comment
+    color: DAEDFF # Takes hexadecimal and basic names like white, red, etc.
+      # Do not add '#'(the pound symbol) before the hexadecimal number.
+    # In yml, it is considered as a comment
   backlinks:
     enabled: true
   related:
@@ -107,13 +107,13 @@ preferences:
     enabled: true
   contextmenu:
     enabled: true
-    copylink: 
+    copylink:
       enabled: true
-    newtab: 
+    newtab:
       enabled: true
-    backlinks: 
+    backlinks:
       enabled: true
-    related: 
+    related:
       enabled: true
   flashcards:
     enabled: true
@@ -123,15 +123,15 @@ encoding: utf-8
 # Build settings
 theme: null
 plugins:
-  - jekyll-feed 
-  - jekyll-sitemap 
+  - jekyll-feed
+  - jekyll-sitemap
   - jekyll-tidy
 
 # Disqus Comments
 disqus:
-    # Leave shortname blank to disable comments site-wide.
-    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-    shortname: # rgvr
+  # Leave shortname blank to disable comments site-wide.
+  # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+  shortname: rgvr
 
 markdown: kramdown
 
@@ -141,7 +141,7 @@ kramdown:
   math_engine: katex
   smart_quotes: ["apos", "apos", "quot", "quot"]
   syntax_highlighter: rouge
-  
+
 sass:
   style: compressed
 
@@ -150,7 +150,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: Post
+      layout: post
       permalink: /posts/:title
       content-type: post
 
@@ -163,14 +163,14 @@ defaults:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-exclude:
-   - .sass-cache/
-   - .jekyll-cache/
-   - gemfiles/
-   - Gemfile
-   - Gemfile.lock
-   - node_modules/
-   - vendor/bundle/
-   - vendor/cache/
-   - vendor/gems/
-   - vendor/ruby/
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

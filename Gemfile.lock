@@ -95,7 +95,6 @@ DEPENDENCIES
   jekyll-sitemap
   jekyll-tidy
   kramdown-math-katex
-  liquid (~> 4.0.4)
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
