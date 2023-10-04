@@ -49,28 +49,28 @@ layout: Stylesheet
 }
 
 .regular-sans {
-    font-family: var(--secondary-font-family) !important;
+    font-family: var(--ibm-plex-sans-family) !important;
 }
 
-.bold {
-    font-weight: 600 !important;
-}
+/*.bold {*/
+/*    font-weight: 600 !important;*/
+/*}*/
 
-.very-bold {
-    font-weight: 800 !important;
-}
+/*.very-bold {*/
+/*    font-weight: 800 !important;*/
+/*}*/
 
-.bolder {
-    font-weight: 500 !important;
-}
+/*.bolder {*/
+/*    font-weight: 500 !important;*/
+/*}*/
 
-.normal {
-    font-weight: 400 !important;
-}
+/*.normal {*/
+/*    font-weight: 400 !important;*/
+/*}*/
 
-.regular {
-    font-style: normal !important;
-}
+/*.regular {*/
+/*    font-style: normal !important;*/
+/*}*/
 
 .oblique {
     font-style: oblique !important;

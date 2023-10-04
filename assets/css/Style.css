@@ -3,9 +3,10 @@ layout: Stylesheet
 ---
 
 @import "/assets/css/highlight.css";
+@import "/assets/css/Util.css";
 /* Containers: Body, Container, Box, Main, Header, Content */
 
-@font-face {
+/*@font-face {
     font-family: 'Ubuntu-Regular';
     font-style: normal;
     font-weight: normal;
@@ -17,7 +18,7 @@ layout: Stylesheet
     font-style: normal;
     font-weight: bold;
     src: local('Ubuntu'), local('Ubuntu-Bold'), url('../fonts/Ubuntu-Bold.woff') format('woff');
-}
+}*/
 
 :root {
     --main-hue: 0;
@@ -44,9 +45,13 @@ layout: Stylesheet
     --search-placeholder-color: hsl(var(--main-hue), 0%, 60.0%);
     --searchbox-shadow-color:  hsl(204, 63.0%, 78.8%);
 
-    --heading-font-family: Ubuntu-Bold;
-    --primary-font-family: Ubuntu-Regular;
-    --secondary-font-family: Ubuntu-Regular;
+    --ubuntu-family: 'Ubuntu', sans-serif;
+    --primary-font-family: 'Ubuntu', sans-serif;
+    --ibm-plex-sans-family: 'IBM Plex Sans', sans-serif;
+
+    --color-metal-grey: rgb(135, 160, 175); /* подписи, разделители */
+    --color-light-grey: rgb(210, 220, 220); /* hover, somewhere back */
+    --color-green: rgb(44, 73, 66);
 }
 
 
@@ -123,7 +128,7 @@ h6 {
 
 h1, h2 {
   color: var(--primary-text-color);
-  font-family:  var(--heading-font-family);
+  font-family:  var(--ubuntu-family);
   font-weight: normal;
 }
 
@@ -140,7 +145,7 @@ h3, h4, h5, h6 {
 
 a, p, ul, li, ol, table, span, blockquote {
     color: var(--primary-text-color);
-    font-family:   var(--secondary-font-family);
+    font-family:   var(--ibm-plex-sans-family);
     font-size: 15px;  /* Let's set the font-size to something old-man friendly */
 }
 
@@ -183,16 +188,15 @@ img {
 
 
 code {
-    font-family: Consolas, 'Courier New', Courier, monospace;
-    font-family: Consolas, 'Courier New', Courier, monospace;
+    font-family: JetBrains Mono, monospace;
+    font-size: 0.9em;
     display: inline-block;
     overflow: auto !important;
     white-space: pre-line !important;       
     word-wrap: break-word !important;       
     padding: 2px 2px  2px 2px;
-    vertical-align:middle;
-    padding: 2px 2px 2px 2px;
-    border: 1px solid var(--secondary-border-color);
+    vertical-align: middle;
+    border: 1px solid var(--color-light-grey); /*var(--secondary-border-color);*/
     border-radius: 4px;
 }
 
@@ -201,7 +205,7 @@ code {
     background-color: var(--secondary-bg-color);
     border-radius: 5px;
     border: none;
-    font-family: var(--secondary-font-family) !important;
+    font-family: var(--ibm-plex-sans-family) !important;
 }
 
 .serif code {
@@ -212,13 +216,27 @@ code {
     font-family: 'EB Garamond', Georgia, serif !important;
 }
 
-
-pre code {
-    font-family: Consolas, 'Courier New', Courier, monospace;
+p code{
+    font-family: JetBrains Mono, monospace;
+    font-size: 0.9em;
     display: inline-block;
     overflow: auto !important;
-    white-space: pre-line !important;       
-    word-wrap: break-word !important;       
+    white-space: pre-line !important;
+    word-wrap: break-word !important;
+    padding: 0 2px 1px 2px;
+    vertical-align: middle;
+    border: none;
+    background-color: var(--secondary-border-color); /*var(--secondary-border-color);*/
+    border-radius: 4px;
+}
+
+pre code {
+    font-family: JetBrains Mono, monospace;
+    font-size: 0.94rem;
+    display: inline-block;
+    overflow: auto !important;
+    white-space: pre-line !important;
+    word-wrap: break-word !important;
     padding: 15px 15px  15px 15px;
     vertical-align:middle;
     width: 90%;
@@ -228,13 +246,12 @@ pre code {
     color: var(--primary-text-color);
 }
 
-
 blockquote:before {
   display: none;
 }
 
 blockquote {
-    padding: 10px;
+    padding: 5px;
 }
 
 
@@ -250,8 +267,10 @@ cite {
 }
 
 blockquote p {
+    padding: 5px;
     font-family: inherit;
     font-size: 15px;
+    border-left: 2px solid var(--color-metal-grey);
 }
 
 table {
@@ -311,7 +330,7 @@ hr {
 .site-heading-rtl > .main-page-heading {
     color: var(--primary-text-color);
     font-family:  var(--primary-font-family);
-    font-weight: 600;
+    font-weight: 700;
     margin-right: 20px;
 }
 
@@ -374,6 +393,7 @@ hr {
 }
 
 .site-heading-ltr a {
+    color: var(--color-green);
     text-decoration: none;
 }
 
@@ -512,7 +532,7 @@ hr {
 
 .menu-item {
     flex-basis: auto;
-    border-right: 1px solid var(--primary-border-color);
+    border-right: 1px solid var(--color-light-grey);
     display: flex;
     flex-direction: column;
     padding-left: 14px;
@@ -539,19 +559,16 @@ hr {
     border-left: 1px solid var(--primary-border-color);
     display: flex;
     flex-direction: column;
-    padding-left: 14px;
-    padding-right: 17px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 10px 5px 10px;
     text-decoration: none;
-    background-color: var(--primary-text-color);
+    background-color: var(--color-light-grey);
 }
 
 .right-menu-item-icon {
     margin-top: 7px;
     align-self: center;
     justify-self: center;
-    stroke: var(--primary-bg-color); /*var(--primary-text-color);*/
+    stroke: var(--color-green); /*var(--primary-text-color);*/
 }
 
 .right-menu-item-text {
@@ -560,14 +577,14 @@ hr {
     font-weight: 600;
     font-size: 0.7rem;
     font-family: var(--primary-font-family);
-    color: var(--primary-bg-color); /*var(--primary-text-color);*/
+    color: var(--color-green); /*var(--primary-text-color);*/
 }
 
 .menu-item-icon {
     margin-top: 7px;
     align-self: center;
     justify-self: center;
-    stroke: var(--primary-text-color);
+    stroke: var(--color-green);
 }
 
 .menu-item-text {
@@ -576,7 +593,7 @@ hr {
     font-weight: 600;
     font-size: 0.7rem;
     font-family: var(--primary-font-family);
-    color: var(--primary-text-color); 
+    color: var(--color-green);
 }
 
 .stale-link {
@@ -625,7 +642,7 @@ hr {
     width: 100%;
     height: 40px;
     border: 0px;
-    font-family: var(--secondary-font-family) !important;
+    font-family: var(--ibm-plex-sans-family) !important;
     color: var(--primary-text-color);
     font-size: 18px;
     border-bottom: 1px solid var(--primary-border-color);
@@ -635,7 +652,7 @@ hr {
 ::placeholder {
     color: var(--search-placeholder-color);
     font-size: 18px;
-    font-family:  var(--secondary-font-family) !important;
+    font-family:  var(--ibm-plex-sans-family) !important;
 }
 .search-icon {
     position: absolute;
@@ -881,7 +898,7 @@ hr {
 }
 
 .feed-title-excerpt-block:hover {
-    background-color: var(--secondary-bg-color);
+    background-color: var(--primary-border-color);
 }
 
 .srccode {
@@ -894,21 +911,22 @@ hr {
 }
 
 .feed-title {
-    color: var(--primary-text-color);
+    color: var(--color-green);
     margin-left: 20px;
     margin-right: 50px;
-    font-size: 16.5px;
-    font-family:  var(--primary-font-family);
-    font-weight: 600;
+    font-size: 17px;
+    font-family: var(--primary-font-family);
+    font-weight: 700;
 }
 
 .feed-excerpt{
-    color: var(--primary-text-color);
+    color: var(--color-green);/*var(--primary-text-color);*/
     margin-top: -12px;
     margin-left: 20px !important;
     margin-right: 30px;
-    font-family:  var(--secondary-font-family);
-    font-size: 15px;
+    font-family: var(--ibm-plex-sans-family);
+    font-weight: 300;
+    font-size: 13px;
 }
 
 .tags {
@@ -953,7 +971,7 @@ hr {
 .mn-right {
     float: right;
     clear: right;
-    font-family:  var(--secondary-font-family) !important;
+    font-family:  var(--ibm-plex-sans-family) !important;
     font-size: 14px;
     margin-right: -45%;
     width: 40%;
@@ -968,7 +986,7 @@ hr {
 .mn-left {
     float: left;
     clear: left;
-    font-family:  var(--secondary-font-family) !important;
+    font-family:  var(--ibm-plex-sans-family) !important;
     font-size: 14px;
     margin-left: -45%;
     width: 40%;
@@ -986,7 +1004,7 @@ hr {
 .sidenote-number:after,
 .sn-left:before,
 .sn-right:before {
-    font-family:  var(--secondary-font-family) !important;
+    font-family:  var(--ibm-plex-sans-family) !important;
     position: relative;
     vertical-align: baseline; 
 }

@@ -1,12 +1,8 @@
-# Statistical Thinking in Python
----
-#dsba #3rd #isl 
-
 #### Graphical EDA
 
 - EDA – Exploratory Data Analysis
 
-> [! info] Python Libraries in Use
+> Python Libraries in Use
 > matplotlib.pyplot as plt
 > seaborn as sns
 > numpy as np
@@ -42,7 +38,7 @@ plt.show()
 - **IQR** – interquartile range, which is from lower quartile (Q1, 25th perc.) to upper quartile (Q3, 75th perc.)
 
 ###### Scatter Plot
-```Python
+```python
 # Make a scatter plot
 _ = plt.plot(versicolor_petal_length, versicolor_petal_width, marker='.', linestyle='none')
 
@@ -58,7 +54,7 @@ plt.show()
 
 - **ECDF** – Empirical Cumulative Distribution Function
 
-```Python
+```python
 def ecdf(data):
 	"""Compute ECDF for a one-dimensional array of measurements."""
 	n = len(data) # Number of data points
@@ -68,7 +64,7 @@ return x, y
 ```
 
 **Plotting multiple ECDFs:**
-```Python
+```python
 # Compute ECDFs
 x_set, y_set = ecdf(setosa_petal_length)
 x_vers, y_vers = ecdf(versicolor_petal_length)

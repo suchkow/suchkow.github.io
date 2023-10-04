@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2017-03-01-welcome-to-jekyll.md",
-                "mode": "source",
+                "file": "_posts/2023-09-21-stat-thinking-py.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2017-03-01-welcome-to-jekyll.md",
+                "file": "_posts/2023-09-21-stat-thinking-py.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2017-03-01-welcome-to-jekyll.md",
+                "file": "_posts/2023-09-21-stat-thinking-py.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2017-03-01-welcome-to-jekyll.md"
+                "file": "_posts/2023-09-21-stat-thinking-py.md"
               }
             }
           }

@@ -1,6 +1,7 @@
+code span { font-family: JetBrains Mono; font-size: 0.94rem}
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #aaaaaa; font-style: italic } /* Comment */
-.highlight .err { color: #F00000; background-color: #F0A0A0 } /* Error */
+.highlight .err { color: #F00000; background-color:} /* Error */
 .highlight .k { color: #0000aa } /* Keyword */
 .highlight .cm { color: #aaaaaa; font-style: italic } /* Comment.Multiline */
 .highlight .cp { color: #4c8317 } /* Comment.Preproc */
