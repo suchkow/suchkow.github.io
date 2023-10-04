@@ -529,6 +529,23 @@ hr {
     padding-top: 5px;
     padding-bottom: 5px;
     text-decoration: none;
+    background-color: var(--primary-text-color);
+}
+
+.right-menu-item-icon {
+    margin-top: 7px;
+    align-self: center;
+    justify-self: center;
+    stroke: var(--primary-bg-color); /*var(--primary-text-color);*/
+}
+
+.right-menu-item-text {
+    margin-top: 5px;
+    margin-left: auto;
+    font-weight: 600;
+    font-size: 0.7rem;
+    font-family: var(--primary-font-family);
+    color: var(--primary-bg-color); /*var(--primary-text-color);*/
 }
 
 .menu-item-icon {
