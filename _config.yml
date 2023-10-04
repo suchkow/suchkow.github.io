@@ -150,7 +150,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: post
+      layout: Post
       permalink: /posts/:title
       content-type: post
 
