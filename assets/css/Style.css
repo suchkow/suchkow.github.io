@@ -3,7 +3,21 @@ layout: Stylesheet
 ---
 
 @import "/assets/css/highlight.css";
-/* Containers: Body, Container, Box, Main, Header, Content */ 
+/* Containers: Body, Container, Box, Main, Header, Content */
+
+@font-face {
+    font-family: 'Ubuntu Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Ubuntu'), local('Ubuntu-Bold'), url('../fonts/Ubuntu-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Ubuntu Bold';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Ubuntu'), local('Ubuntu-Bold'), url('../fonts/Ubuntu-Bold.woff') format('woff');
+}
 
 :root {
     --main-hue: 0;
@@ -29,8 +43,9 @@ layout: Stylesheet
     --anchor-link-color: hsl(205, 12%, 70%);
     --search-placeholder-color: hsl(var(--main-hue), 0%, 60.0%);
     --searchbox-shadow-color:  hsl(204, 63.0%, 78.8%);
-    --heading-font-family: Georgia, serif;
-    --primary-font-family: sans-serif;
+
+    --heading-font-family: Ubuntu Bold;
+    --primary-font-family: Ubuntu Regular;
     --secondary-font-family: sans-serif;
 }
 

@@ -29,26 +29,15 @@ url: "https://suchkow.github.io" # the base hostname & protocol for your site, e
 #######################################################################
 
 heading: istorage
-subheading: # subheading won't work without a tagline,
-  # tagline is mandatory if you want the
-  # suheading to appear. The reason is
-  # having a heading and a subheading looks
-  # ridiculous.
-  enabled: true
-  name: web storage
-tagline: # subheading won't work without a tagline,
-  # tagline is mandatory if you want the
-  # suheading to appear. The reason is
-  # having a heading and a subheading looks
-  # ridiculous.
-  # Although you can have the tagline without
-  # the subheading to support the main heading
-  # which in this case is 'Knowledge Continuum'
+subheading:
   enabled: false
   name:
+tagline:
+  enabled: true
+  name: web storage
 copyright:
   year: 2023
-  msg: is # This is a mandatory attribute for copyright to be displayed
+  msg: is
 
 user:
   display: false # setting it to false will remove the header image and bio
@@ -60,9 +49,8 @@ user:
   email: null
   photo: /assets/img/profile.png
   alt_link: null
-  social: # just leave the field blank or type in null, if you don't have a
-    # particular social media account and it won't appear
-    enabled: false  # turn this to true
+  social:
+    enabled: false
     twitter: null
     github: null
     youtube: null
@@ -70,6 +58,7 @@ user:
     twitch: null
     facebook: null
     instagram: null
+    telegram: null
 
 
 
@@ -131,7 +120,7 @@ plugins:
 disqus:
   # Leave shortname blank to disable comments site-wide.
   # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-  shortname: rgvr
+  shortname:
 
 markdown: kramdown
 
