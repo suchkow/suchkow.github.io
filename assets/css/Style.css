@@ -46,8 +46,9 @@ layout: Stylesheet
     --searchbox-shadow-color:  hsl(204, 63.0%, 78.8%);
 
     --ubuntu-family: 'Ubuntu', sans-serif;
-    --primary-font-family: 'Ubuntu', sans-serif;
+    --nunito-family: 'Nunito', sans-serif;
     --ibm-plex-sans-family: 'IBM Plex Sans', sans-serif;
+    --primary-font-family: var(--nunito-family);
 
     --color-metal-grey: rgb(135, 160, 175); /* подписи, разделители */
     --color-light-grey: rgb(210, 220, 220); /* hover, somewhere back */
@@ -141,7 +142,7 @@ h2 {
 h3, h4, h5, h6 {
   color: var(--color-green);
   font-family:  var(--primary-font-family);
-  font-weight: bold;
+  font-weight: 700;
 }  
 
 a, p, ul, li, ol, table, span, blockquote {
@@ -339,7 +340,7 @@ hr {
     color: var(--secondary-text-color);
     font-family:  var(--primary-font-family);
     font-size: 0.7rem;
-    font-weight: 600;
+    font-weight: 700;
     margin-right: 20px;
     margin-top: -25px;
 }
@@ -348,7 +349,7 @@ hr {
 .site-heading-rtl > .main-page-subheading {
     color: var(--primary-text-color);
     font-family:  var(--primary-font-family);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 17.3px !important;
     margin-top: -8px;
     margin-right: 20px;
@@ -525,6 +526,38 @@ hr {
     /*margin-right: 10px;*/
     /*flex-direction: row;*/
     /*align-items: center;*/
+}
+
+.footer-left {
+    width: 47%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 3%;
+}
+
+.footer-right {
+    width: 50%;
+    float: right;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.footer-right-item {
+    flex-basis: auto;
+    border-left: 1px solid var(--primary-border-color);
+    display: flex;
+    flex-direction: column;
+    padding: 7.5px;
+    text-decoration: none;
+}
+
+.footer-right-item-icon {
+    align-self: center;
+    justify-self: center;
+    stroke: var(--color-green);
 }
 
 .menu-item:nth-of-type(1) {
