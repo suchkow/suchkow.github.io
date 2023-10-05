@@ -52,6 +52,7 @@ layout: Stylesheet
     --color-metal-grey: rgb(135, 160, 175); /* подписи, разделители */
     --color-light-grey: rgb(210, 220, 220); /* hover, somewhere back */
     --color-green: rgb(44, 73, 66);
+    --color-blue: rgb(64, 66, 238);
 }
 
 
@@ -933,25 +934,34 @@ hr {
     list-style: none;
     margin: 0;
     overflow: hidden; 
-    padding: 0;
+    padding: 1px;
 }
 
 .tags li {
+    padding-left: 5px;
     float: left; 
 }
 
 .tag {
-    color: var(--primary-text-color);
+    /*color: var(--primary-text-color);
     background: var(--secondary-bg-color);
     text-decoration: none;
     display: inline-block;
-    padding: 0 12px;
+    padding: 0 1px;
     border-radius: 32px;
     height: auto;
     vertical-align: middle;
     font-family:  var(--primary-font-family);
     font-weight: normal !important;
-    font-size: 13px;
+    font-size: 13px;*/
+    padding: 2px 4px 2px 4px;
+    border: none;
+    background: var(--color-light-grey);
+    color: var(--color-green);
+    border-radius: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.7em;
 }
 
 .content {
