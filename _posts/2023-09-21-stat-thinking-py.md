@@ -1,3 +1,9 @@
+---
+title: Statistical Thinking in Python
+tags: SL
+comments: false
+---
+
 #### Graphical EDA
 
 - EDA – Exploratory Data Analysis
