@@ -128,7 +128,7 @@ h6 {
 }
 
 h1, h2 {
-  color: var(--primary-text-color);
+  color: var(--color-green);
   font-family:  var(--ubuntu-family);
   font-weight: normal;
 }
@@ -139,13 +139,13 @@ h2 {
 }
 
 h3, h4, h5, h6 {
-  color: var(--primary-text-color);
+  color: var(--color-green);
   font-family:  var(--primary-font-family);
   font-weight: bold;
 }  
 
 a, p, ul, li, ol, table, span, blockquote {
-    color: var(--primary-text-color);
+    color: var(--color-green);
     font-family:   var(--ibm-plex-sans-family);
     font-size: 15px;  /* Let's set the font-size to something old-man friendly */
 }
@@ -870,10 +870,9 @@ hr {
 .back-icon {
     background-color: var(--quinary-bg-color);
     fill: currentColor;
-    color: var(--primary-text-color);
+    color: var(--color-metal-grey);
     margin-top: 5px;
-    padding-left: 5px; 
-    fill: currentColor;
+    padding-left: 5px;
     cursor: pointer;
 }
 
@@ -884,7 +883,7 @@ hr {
 }
 
 .back-p {
-    color: var(--primary-text-color);
+    color: var(--color-metal-grey);
     text-decoration: none;
     cursor: pointer;
     font-weight: 600;
