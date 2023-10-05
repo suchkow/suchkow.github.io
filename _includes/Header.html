@@ -1,4 +1,5 @@
 <header>
+    {%- if page.permalink == "//" -%}
     <div class="dashboard disable-select">
         {%- assign header_direction = 'site-heading-rtl' -%}
         {%- assign userboard_display = 'show' -%}
@@ -135,6 +136,7 @@
         </div>
         {%- endif -%}
     </div>
+    {%- endif -%}
     {%- if site.user.display and userboard_display == 'show' -%}
     <div class="avatar {{avatar_margin}} disable-select" title="click me to know more">
         <a class="avatar-link" href="/about">
