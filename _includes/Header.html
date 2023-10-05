@@ -137,6 +137,7 @@
         {%- endif -%}
     </div>
     {%- endif -%}
+
     {%- if site.user.display and userboard_display == 'show' -%}
     <div class="avatar {{avatar_margin}} disable-select" title="click me to know more">
         <a class="avatar-link" href="/about">
@@ -144,6 +145,7 @@
         </a>
     </div>
     {%- endif -%}
+
     <div class="super-menu">
         <div class="menu-left disable-select">
             <a class="left-menu-item" href="/about">
@@ -163,7 +165,7 @@
                     </svg>
                     <p class="menu-item-text">Tags</p>
             </a>
-            <a class="left-menu-item" href="/feed.xml">
+            <!-- <a class="left-menu-item" href="/feed.xml">
                     <svg class="menu-item-icon" width="18" height="19" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4 11.5C6.38695 11.5 8.67613 12.4482 10.364 14.136C12.0518 15.8239 13 18.1131 13 20.5"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -174,7 +176,7 @@
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <p class="menu-item-text">RSS</p>
-            </a>
+            </a> -->
         </div>
         <div class="menu-right disable-select">
             <a class="right-menu-item" href="/storage">
@@ -187,6 +189,7 @@
             </a>
         </div>
     </div>
+
     {%- if site.preferences.search.enabled -%}
     <div class="searchbar search-container">
       <svg class="search-icon" width="19" height="19" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -206,6 +209,7 @@
     <script type="text/javascript" src="/assets/js/vendor/lunr.min.js"></script>
     <script src="/assets/js/Search.js"></script>
     {%- endif -%}
+
     {%- if page.permalink != "/" -%}
     <div class="main-site-subheader disable-select" id="scroll-head">
         <div class="back-icon" onclick="window.location.assign('/');">
@@ -217,5 +221,5 @@
         <p class="back-p">Home</p>    
     </div>
     {%- endif -%}
-</header>
 
+</header>
